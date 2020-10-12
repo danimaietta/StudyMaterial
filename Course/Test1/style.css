@@ -1,0 +1,79 @@
+body {
+    height: 120vh;
+    margin: 0;
+}
+
+#background {
+    height: 100%;
+    background-image: url("assets/mountains.jpg");
+    background-size: cover;
+    filter: blur(5px);
+}
+
+#title > p {
+    color: white;
+    padding: 40px 0;
+    margin: 0;
+}
+
+#title {
+    background: black;
+    height: 100px;
+}
+
+#loginContainer {
+    position: absolute;
+    background: whitesmoke;
+    top: 15vh;
+    left: 25vw;
+    height: 60vh;
+    width: 50%;
+    border-radius: 2%;
+}
+
+img, input, button, #loginContainer {
+    display: block;
+    border: grey 2px solid;
+}
+
+img {
+    margin: 3vh auto 60px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+input {
+    margin: 3vh auto;
+    width: 70%;
+    height: 5%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input:focus{
+    background: skyblue;
+    color: white;
+    font-weight: bold;
+}
+
+p {
+    font: 25px Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    font: 20px Arial, sans-serif;
+    background: white;
+    margin: 10vh auto;
+    width: 35%;
+    height: 5%;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: skyblue;
+    color: white;
+    cursor: pointer;
+}

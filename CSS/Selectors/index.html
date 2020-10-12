@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Selectors</title>
+    </head>
+    <body>
+      <div class="selectorSubject">Simple</div>
+      <div class="selector">
+        <h4>Group -> ,</h4>
+        <div id="grouping1">grouping1</div>
+        <div id="grouping2">grouping2</div>
+        <div id="grouping3">grouping3</div>
+      </div>
+      <div class="selectorSubject">Combinator</div>
+      <div class="selector">
+        <h4>Descendant -> (space)</h4>
+        <div id="descendant1">descendant1
+            <div id="descendant2">descendant2
+                <div id="descendant3">descendant3
+                  <div id="descendant4">descendant4</div>
+                </div>
+             </div>
+        </div>
+      </div>
+      <div class="selector">
+        <h4>Child -> ></h4>
+        <div id="child1">child1
+            <div id="child2">child2
+                <div id="child3">child3</div> 
+             </div>   
+        </div>
+      </div>
+      <div class="selector">
+        <h4>Adjacent Sibling -> +</h4>
+        <div id="sibling1">sibling1</div>
+        <div id="sibling2">sibling2</div>
+        <div id="sibling3">sibling3</div>
+      </div>
+      <div class="selector">
+        <h4>General Sibling -> ~</h4>
+        <div id="sibling4">sibling4</div>
+        <div id="sibling5">sibling5</div>
+        <div id="sibling6">sibling6</div>
+      </div>
+      <div class="selectorSubject">Pseudo-class</div>
+      <div class="selector">
+        <h4>Anchor -> #id:event</h4>
+        <div id="anchor1">anchor1</div>
+      </div>
+      <div class="selector">
+        <h4>Simple Tooltip -> element:event element</h4>
+        <div id="tooltip">tooltip</div>
+        <span>span</span>
+      </div>
+      <div class="selector">
+        <h4>Childs -> element:nth-child(1)</h4>
+        <div id="first-father">first-father
+          <div class="child">first-child</div>
+          <div class="child">second-child</div>
+          <div class="child">third-child</div>
+        </div>
+      </div>
+      <div class="selector">
+        <h4>Lang -> f:lang(example)</h4>
+        <q lang="example">
+      </div>
+      <div class="selectorSubject">Pseudo-Elements</div>
+      <div class="selector">
+        <h4>Simple Pseudo -> element/class/id::event</h4>
+        <div id="first-line">first-line </br> second line.</div>
+        <div id="first-letter">first-letter</div>
+        <div id="before">before in html</div>
+        <div id="after">after in html</div>
+      </div>
+      <div class="selector">
+        <h4>Multiple -> ::event</h4>
+        <div id="first-line">first-line </br> second line.</div>
+        <div id="first-letter">first-letter</div>
+        <div id="before">before in html</div>
+        <div id="after">after in html</div>
+      </div>
+      <div class="selectorSubject">Attribute</div>
+      <div class="selector">
+        <h4>Simple -> element[target]</h4>
+        <div id="simpleAttr" target="a">simple attribute</div>
+      </div>
+      <div class="selector">
+        <h4>With value -> element[target="value"]</h4>
+        <div id="withValueAttr" target="b">value attribute</div>
+      </div>
+      <div class="selector">
+        <h4>Containing word -> element[target~="value"]</h4>
+        <div id="wordInAttr" target="a bc">word in attribute</div>
+      </div>
+      <div class="selector">
+        <h4>Separated by hyphen -> element[target|="startValue"]</h4>
+        <div id="hyphenAttr" target="a-bc">hyphen attribute</div>
+      </div>
+      <div class="selector">
+        <h4>Start with value -> element[target^="startValue"]</h4>
+        <div id="startAttr" target="abc">start attribute</div>
+      </div>
+      <div class="selector">
+        <h4>Ends with value -> element[target$="endValue"]</h4>
+        <div id="endAttr" target="abc">end attribute</div>
+      </div>
+      <div class="selector">
+        <h4>Containing value -> element[target*="value"]</h4>
+        <div id="containingAttr" target="abc">containing attribute</div>
+      </div>
+    </body>
+</html>

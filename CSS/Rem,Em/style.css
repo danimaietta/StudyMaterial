@@ -1,0 +1,28 @@
+body { /* raiz/root */
+    font-size: 20px; /* 1rem or 1em = 20px */
+}
+
+p.rem {
+    font-size: 2rem;
+}
+
+.remFather {
+    font-size: 2rem;
+}
+
+.remFather2 {
+    font-size: 2rem;
+}
+
+p.em {
+    font-size: 2em;
+}
+
+.emFather {
+    font-size: 2em;
+}
+
+.emFather2 {
+    font-size: 2em;
+}
+

@@ -1,0 +1,45 @@
+body{
+  height: 200vh;
+}
+
+.father{
+  display: inline-block;
+  background-color: royalblue;
+  height: 500px;
+  width: auto;
+}
+
+.child{
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.child-1{
+  display: inline;
+  margin-left: 10px;
+  background-color: coral; 
+}
+
+.child-2{
+  display: inline-block;
+  width: 100px;
+  margin-top: 10px;
+  background-color: crimson; 
+}
+
+.child-3{
+  background-color: cornsilk; 
+}
+
+.child-4{
+  background-color: silver; 
+}
+
+.collapse{
+  visibility: collapse;
+}
+
+tr, th, td{
+  border: 1px black solid;
+}

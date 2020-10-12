@@ -1,0 +1,139 @@
+/*General*/
+html{
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+}
+body{
+  margin: 0;
+}
+h4{
+  color: peru;
+}
+.selectorSubject{
+  width: 98%;
+  height: 1%;
+  background: purple;
+  border-top: white solid 1px;
+  padding: 1%;
+  text-align: center;
+}
+.selector{
+  width: 95%;
+  height: 5%;
+  background: black;
+  border-top: white solid 1px;
+  padding: 2.5%;
+}
+
+/********************* Simple ******************/
+
+/* #id, .class */
+
+/* universal
+
+    div {
+      margin: 0;
+    }
+*/
+
+/*Grouping*/
+#grouping1, #grouping3 {
+  color: green;
+  text-align: center;
+}
+
+/******************** Combinator ****************/
+
+/* 
+  Combinators always work like this:
+    the first selector stablish the condition
+    the second selector is the one affected with changes 
+*/
+
+/*Descendant*/
+#descendant1 #descendant2{
+  color: green;
+  text-align: center;
+}
+
+/*Child*/
+#child1 > #child2 {
+  color: green;
+  text-align: center;
+}
+
+/*Adjacent Sibling*/
+#sibling1 + #sibling2{
+  color: green;
+  text-align: center;
+}
+
+/*General Sibling*/
+#sibling4 ~ #sibling6{
+  color: green;
+  text-align: center;
+}
+
+/******************** Pseudo-class ****************/
+/* always use  :  */
+/*Anchor*/
+#anchor1:hover{
+  background: green;
+}
+
+/*Tooltip*/
+div:hover span{
+  background: green;
+}
+
+/*Childs*/
+.child:nth-child(1){
+  background: green;
+}
+
+/*Lang*/
+q:lang(example){
+  quotes: "~" "kikirikiiii";
+}
+
+/******************** Pseudo-elements ****************/
+/* always use   ::   */
+#first-line::first-line{
+  color: green;
+}
+#first-letter::first-letter{
+  color: green;
+}
+#before::before{
+  content: "before in css - ";
+}
+#after::after{
+  content: " - after in css ";
+}
+::selection{
+  background: red;
+}
+
+/******************** Attribute ****************/
+#simpleAttr[target]{
+  background: green;
+}
+#withValueAttr[target="b"]{
+  background: green;
+}
+#wordInAttr[target~="bc"]{
+  background: green;
+}
+#hyphenAttr[target|="a"]{ /* hyphen = guion- */
+  background: green;
+}
+#startAttr[target^="a"]{
+  background: green;
+}
+#endAttr[target$="c"]{
+  background:green;
+}
+#containingAttr[target*="b"]{
+  background: green;
+}

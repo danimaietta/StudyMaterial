@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title> Position </title>
+    </head>
+    <body>
+        <div class="positionSubject"> Static </div>
+        <div class="position">
+          <h4> Default, not affected by: top right down left </h4>
+          <div class="static"> Static div </div>
+        </div>
+        <div class="positionSubject"> Relative </div>
+        <div class="position">
+          <h4> Affected by: top right down left </h4>
+          <div class="relative"> Relative div </div>
+          <q> some text left to another relative div </q>
+          <div class="relative2"> Relative div  </div>
+        </div>
+        <div class="positionSubject"> Fixed </div>
+        <div class="position">
+          <h4> 
+            Its position is accorded to the viewport, so it's not affected by their fathers 
+            </br> and isn't affected by the scroll
+          </h4>
+          <div class="fixed"> Fixed div </div>
+          <div class="fixed2"> Fixed div 2 </div>
+        </div>
+        <div class="positionSubject"> Absolute </div>
+        <div class="position">
+          <h4> Its position is accorded to the nearest father </h4>
+          <div class="absoluteContainer"> Father
+            <div class="absolute"> Absolute div 1</div>
+            <div class="absolute"> Absolute div 2 </div>
+          </div>
+        </div>
+        <div class="positionSubject"> Sticky </div>
+        <div class="position">
+          <h4> Works like fixed but its position is accorded to the nearest father </h4>
+          <div class="stickyContainer">
+            <div class="sticky"> Sticky div </div>
+            Father </br>
+            Im adding extra content </br> 
+            so this div </br>
+            is could be scrolled
+          </div>
+        </div>
+        <p style="color:red;"> Texto rojo </p> <!-- css -->
+        <script> // javascript
+            console.log("Este mensaje se imprime en la consola del browser")
+        </script>
+    </body>
+</html>

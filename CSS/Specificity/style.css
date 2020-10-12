@@ -1,0 +1,26 @@
+/* Tier Specifity*/
+
+/* Tier1 -->  style="color:tomato;" */
+
+#tier2{
+  color: blue;
+}
+
+.tier3{
+  color: aqua;
+}
+
+/* Tier4 */
+h1{
+  color: green;
+}
+
+/* Tier5 */
+h1{
+  color: blueviolet;
+}
+
+/* Tier6 */
+html{
+  color: black;
+}

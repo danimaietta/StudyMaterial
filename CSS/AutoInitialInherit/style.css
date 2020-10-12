@@ -1,0 +1,26 @@
+body{
+  height: 200vh;
+}
+
+.grand-father{
+  background-color: royalblue;
+  width: 500px;
+}
+
+.son{
+  display: inline-block;
+  width: inherit;
+}
+
+.child-1{
+  background-color: coral;
+  width: auto; 
+}
+
+.child-2{
+  background-color: crimson; 
+}
+
+.child-3{
+  background-color: cornsilk; 
+}
