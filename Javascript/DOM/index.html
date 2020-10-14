@@ -2,10 +2,39 @@
 <html>
 <head>
   <title>DOM Interactions</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- innerText -->
+  <div class="container">
+    <h1> Basic sample innerText</h1>
     <p id="p1"> Primer Mensaje </p>
-    <button onclick="cambiaTexto()"> Cambia texto </button>
-    <script src="logic.js"></script>
+    <button onclick="changeText()"> Cambia texto </button>
+  </div>
+  <!-- innerHTML -->
+  <div class="container">
+    <h1> Basic sample innerHTML</h1>
+    <p id="p2"> Aun no has clickeado </p>
+    <button onclick="showInnerHTML()"> Mostrar InnerHMTL del .container </button>
+    <button onclick="inyectHTML()">Inyect HTML using innerHTML</button>
+  </div>
+  <!-- value -->
+  <div class="container">
+    <h1> Basic sample value</h1>
+    <p id="p3"> soy el valor del input </p>
+    <input placeholder="Escribe algo"/>
+    <button onclick="showValue()"> Mostrar el valor del input </button>
+  </div>
+  <!-- style -->
+  <div class="container">
+    <h1> Basic sample style</h1>
+    <button onclick="changeStyle()"> Cambia colores </button>
+  </div>
+  <!-- eventListener -->
+  <div class="container">
+    <h1> Basic sample eventListener</h1>
+    <input id="eventInput" type="text" />
+  </div>
+  <script src="logic.js"></script>
 </body>
 </html>
