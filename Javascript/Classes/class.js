@@ -45,7 +45,7 @@ console.log(`my car is ${myCar.age(year)} years old`) // my car is 6 years old
 
 /* ********************************************
                 MINDBLOWN
-        Los tipos de variables son classes
+    Los tipos de variables son classes
 ******************************************** */
 
 var text = String('hi')
