@@ -1,4 +1,3 @@
-const { sayHelloWorld } = require("../../Modules/module")
 /* imports go always on top */
 var utils = require('./utils'); // es5
 import User from './user' // es6
