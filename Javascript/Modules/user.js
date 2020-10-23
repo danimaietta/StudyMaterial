@@ -1,3 +1,7 @@
+/*
+    ES6 version
+*/
+
 export default class User{
     constructor(name, age){
         this.name = name
@@ -7,4 +11,3 @@ export default class User{
         console.log(`hi ${this.name}, my age is ${this.age}`)
     }
 }
-
