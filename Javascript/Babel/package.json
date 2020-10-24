@@ -1,13 +1,12 @@
 {
-  "homepage": "https://danimaietta.github.io/FightGame",
   "name": "babel-tutorial",
   "version": "1.0.0",
-  "description": "Project for TylerMcGinnis.com's React Hooks course.",
+  "description": "basic babel project with an app that uses modules running correctly",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "NODE_ENV='production' webpack",
-    "build-for-windows": "SET NODE_ENV='production' && webpack"
+    "prod": "SET NODE_ENV='production' && webpack",
+    "build-for-mac": "NODE_ENV='production' webpack"
   },
   "babel": {
     "presets": [
@@ -20,15 +19,11 @@
     ]
   },
   "keywords": [],
-  "author": "",
+  "author": "danimaietta",
   "license": "ISC",
   "dependencies": {
-    "prop-types": "^15.7.2",
-    "query-string": "^6.8.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-icons": "^3.10.0",
-    "react-router-dom": "^5.0.1"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
