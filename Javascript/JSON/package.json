@@ -1,7 +1,7 @@
 {
-  "name": "babel-tutorial",
+  "name": "json-tutorial",
   "version": "1.0.0",
-  "description": "basic babel project with an app that uses modules running correctly",
+  "description": "this shows how to import json",
   "scripts": {
     "start": "webpack-dev-server",
     "prod": "SET NODE_ENV='production' && webpack",
