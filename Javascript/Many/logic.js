@@ -19,8 +19,8 @@ let cat = {name:"Mussolini", hairColor: "grey-white", eyesColor: "yellow", weigh
 
 let {name:catName, hairColor, eyesColor, weight} = cat;
 
-console.log(`cat.name: ${cat.name}`)
-console.log(`catName: ${catName}`)
+console.log(`cat.name: ${cat.name}`) // Mussolini
+console.log(`catName: ${catName}`)   // Mussolini
 
 function fetchRepos({ language='All', minStars=0, maxStars='', createdBefore='no', createdAfter='yes' }){
   console.log(`language: ${language}, minStars: ${minStars}, maxStarts: ${maxStars}, createdBefore: ${createdBefore}, createdAfter: ${createdAfter}`)

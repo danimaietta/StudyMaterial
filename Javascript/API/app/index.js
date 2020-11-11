@@ -10,6 +10,7 @@ getAllMovies().then(movies => console.log('movies', movies))
     nasa api
 */
 
+// this example is meant to fail
 // earth: lon, lat, date, dim
 getEarth(-95, 29.78, '2018-01-01', 0.10).then(earth => console.log('earth', earth)) 
 

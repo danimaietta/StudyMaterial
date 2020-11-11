@@ -1,12 +1,13 @@
-let promise = new Promise((resolve, reject) => {
-    let a = 1 + 1
-    if(a == 2){
+// creating a promise
+const promise = new Promise((resolve, reject) => {
+    if(1 == 1){
         resolve('Success')
     }else{
         reject('Failed')
     }
 })
 
+// calling the promise
 p.then(message => {
     console.log(`The promise is a total ${message}`)
 }).catch(message => {

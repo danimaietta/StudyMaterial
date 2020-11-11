@@ -1,43 +1,31 @@
-function makeRequest(location){
+let userLeft = false
+const userWatchingCatMeme = false
+
+function watchTutorialPromise(){
     return new Promise((resolve, reject) => {
-        console.log(`Making Request to ${location}`)
-        if(location === 'Google'){
-            resolve('Google says hi')
+        // call the server data
+        if(userLeft){
+            reject({
+                name: 'User Left',
+                message: ':('
+            })
+        }else if(userWatchingCatMeme){
+            reject({
+                name: 'User Watching Cat Meme',
+                message: 'WebDevSimplified < Cat'
+            })
         }else{
-            reject('We can only talk to Google')
+            resolve('Thumbs up and Subscribe')
         }
     })
 }
 
-function processRequest(response){
-    return new Promise((resolve, reject) => {
-        console.log('Processing response')
-        resolve(`Extra Information ${response}`)
-    })
-}
-
-// Promises solution
-/*
-makeRequest('Google').then(res => {
-  console.log(res)
-  return processRequest(res)
-}).then(processedResponse => {
-  console.log(processedResponse)
-}).catch(err => console.log(err)) 
-*/
-
-
-// Async Await solution
-/*
 const doWork = async () => {
-  try{
-    const res = await makeRequest('Google')
-    console.log(res)
-    const processedResponse = await processRequest(res)
-    console.log(processedResponse)
-  }catch(err){
-    console.log(err)
-  } 
-}
+    try{
+        const message = await watchTutorialPromise()
+        console.log(`Success: ${message}`)
+    }catch(error){
+        console.log(`${error.name} ${error.message}`)
+    }
+} 
 doWork()
-*/
