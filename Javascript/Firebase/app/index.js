@@ -1,6 +1,7 @@
 import crud from './DB/firebase'
 import './style.css' // we use css from here
 import msgHandler from './logic/msgHandler'
+import './logic/btnValidator'
 
 // Create
 const addBtn = document.getElementById("addMovieBtn")
@@ -15,8 +16,8 @@ addBtn.addEventListener("click", async () => {
             crud.addMovie(title, description)
             msgHandler.showSuccessMsg(true, 'create')
         }else{
-            msgHandler.showErrorMsg(true, 'create')
             msgHandler.showSuccessMsg(false)
+            msgHandler.showErrorMsg(true, 'create')
         }
     }catch(error){
         console.log(error)

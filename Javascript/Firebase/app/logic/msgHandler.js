@@ -1,7 +1,3 @@
-const successes = ['succMsgCreate', 'succMsgUpdate', 'succMsgDelete']
-const errors = ['errMsgCreate', 'errMsgRead', 'errMsgUpdate']
-const actions = ['create', 'read', 'update', 'delete']
-
 const showSuccessMsg = (show, type = '') => {
     if(show && type === "create"){
         document.getElementById('succMsgCreate').innerText = 'The movie was created successfully'
