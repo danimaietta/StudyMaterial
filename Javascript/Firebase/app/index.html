@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> DB Connection </title>
+    </head>
+    <body>
+        <!-- HTML Code -->
+        <div>
+            <h1>CRUD Example</h1>
+            <p id="errMsg"></p>
+            <hr>
+            <h3>Create</h3>
+            <span>Title: </span><input id="titleInp"></input> </br>
+            <span>Description: </span><input id="descriptionInp"></input> </br>
+            <button id="addMovieBtn">Create</button>
+            <p id="errMsgCreate"></p>
+            <p id="succMsgCreate"></p>
+            <hr>
+            <h3>Read</h3>
+            <span>Title: </span><input id="findByTitleInp"></input> </br>
+            <button id="getMoviesBtn">Read</button>
+            <p id="errMsgRead"></p>
+            <p id="title"></p>
+            <p id="description"></p>
+            <hr>
+            <h3>Update</h3>
+            <p> What is in Read section is going to get updated</p>
+            <span>New Title: </span><input id="newTitleInp"></input> </br>
+            <span>New Description: </span><input id="newDescriptionInp"></input> </br>
+            <button id="updateMoviesBtn">Update</button>            
+            <p id="errMsgUpdate"></p>   
+            <p id="succMsgUpdate"></p>
+            <hr>
+            <h3>Delete</h3>
+            <p> What is in Read section is going to be deleted</p>
+            <button id="deleteMoviesBtn">Delete</button>
+            <p id="errMsgDelete"></p>   
+            <p id="succMsgDelete"></p>
+        </div>
+        <!-- Scripts -->
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+        <script> 
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyCEj7ETIa6RH1YaykNdBPmcmUQZAzQkxiw",
+                authDomain: "movies-8f180.firebaseapp.com",
+                databaseURL: "https://movies-8f180.firebaseio.com",
+                projectId: "movies-8f180",
+                storageBucket: "movies-8f180.appspot.com",
+                messagingSenderId: "146934975644",
+                appId: "1:146934975644:web:1e169dfa0995318f5db159",
+                measurementId: "G-2YM0JY4HZS"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        </script src="index.js">
+    </body>
+</html>
