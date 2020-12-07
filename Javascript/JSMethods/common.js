@@ -2,13 +2,13 @@
 
 // split
 let word = "word"
-console.log("word.split('')", word.split(''))
-console.log("word.split('o')", word.split('o'))
+console.log("word.split('')", word.split('')) // ["w", "o", "r", "d"]
+console.log("word.split('o')", word.split('o')) // ["w", "rd"]
 
 // join // reverse
 let wordArray = ['w','o','r','d']
-console.log("['w','o','r','d'].reverse()", wordArray.reverse())
-console.log("['w','o','r','d'].join('')", wordArray.join(''))
+console.log("['w','o','r','d'].reverse()", wordArray.reverse()) // ["d", "r", "o", "w"]
+console.log("['w','o','r','d'].join('')", wordArray.join('')) // drow
 
 // ----------------------------------------------------------------------------------------------
 
@@ -22,7 +22,7 @@ let names = ['Gertrude', 'Henry', 'Melvin', 'Billy Bob'];
 
 for (let animal of animals) {
   let nameIdx = Math.floor(Math.random() * names.length);
-  console.log(`${names[nameIdx]} the ${animal}`);
+  console.log(`${names[nameIdx]} the ${animal}`); // Melvin the 🐔   Melvin the 🐷   Henry the 🐑   Billy Bob the 🐇
 }
 
 // for in go over properties of objets
@@ -33,5 +33,5 @@ let oldCar = {
 };
 
 for (let key in oldCar) {
-  console.log(`${key} --> ${oldCar[key]}`);
+  console.log(`${key} --> ${oldCar[key]}`); // make --> Toyota   model --> Tercel   year --> 1996
 }

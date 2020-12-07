@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check Greeting component functionality  renders a message: <div>
+                    <button>Say hello world</button>
+                    <h1>Hello World!</h1>
+                  </div> 1`] = `
+<div>
+  <button>
+    Say hello world
+  </button>
+  <h1>
+    Hello World!
+  </h1>
+</div>
+`;
