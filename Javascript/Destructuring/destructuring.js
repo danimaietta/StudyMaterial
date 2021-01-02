@@ -4,14 +4,14 @@
 
 /*
     ...iterable
-    un iterable es un arreglo, un string, cual variable que posea lenght
-    ... obtiene el contenido del array
+    an iterable is an array, a string, any varialble that has lenght
+    ... gets the content of the array
 */
 
 var arr = [1,2,"pepe",4,5]
 console.log(...arr) // 1 2 pepe 4 5
 
-// es util para juntar arrays
+// it is useful to gather arrays
 
 var arr1 = [1,2,3,4,5]
 var arr2 = [6,7,8,9,10]
@@ -19,6 +19,7 @@ var arr3 = [...arr1, ...arr2]
 console.log(arr3) // [1 2 3 4 5 6 7 8 9 10]
 
 // mas util aun utilizarlo para tener un array los parametros de un metodo
+// is useful
 
 var parametros = ["Dani", 25, 1.68]
 
@@ -29,8 +30,7 @@ function presentation(name, age, height){
 presentation(...parametros) // my name is Dani, im 25 years old and im 1.68m tall
 
 /*
-    if we want the values in the array as variables
-    sin destructurar
+    if we want the values in the array as variables without destructuring
 */
 
 var person = ['Dani', 25, 1.68]
@@ -40,15 +40,14 @@ var height = person[2]
 console.log(name, age, height) // Dani 25 1.68
 
 /*
-    con array destructuring 
+    with array destructuring 
 */
 
 var [name, age, height] = ['Dani', 25, 1.68]
 console.log(name, age, height) // Dani 25 1.68
 
 /*
-    si queremos destructurar en los parametros,=
-    sin destructurar
+    if we want to destructure the arguments, without array destructuring
 */
 
 var arr = ["Dani", 25]
@@ -62,24 +61,24 @@ function info(arr){ // aqui se destructura
 info(arr) // name: Dani, age: 25
 
 /*
-    con array destructuring 
+    with array destructuring 
 */
 
 var arr = ["Dani", 25]
 
-function info([name, age]){ // aqui se destructura
+function info([name, age]){ // here it destructures
     console.log(`name: ${name}, age: ${age}`)
 }
 
 info(arr) // name: Dani, age: 25
 
 /*
-    array destructuring con valores por defecto
+    array destructuring with default values
 */
 
 var arr = [undefined, 25]
 
-function info([ name="default", age=30 ]){ // aqui se destructura
+function info([ name="default", age=30 ]){ //  here it destructures
     console.log(`name: ${name}, age: ${age}`)
 }
 
@@ -113,7 +112,7 @@ var {name, age, saludar} = person
 console.log(name, age, saludar()) // Dani 25 hi
 
 /*
-    si se quiere enviar las propiedades del objeto por parametro
+    if we want to send the properties of the object by arguments
 */
 
 var person = {
@@ -128,7 +127,7 @@ function info({name, age}){
 info(person) // name: Dani, age: 25
 
 /*
-    se pueden definir parametros por defecto
+    we can define the arguments by default
 */
 
 function info({name = 'Dani', age = 25}){
@@ -138,7 +137,7 @@ function info({name = 'Dani', age = 25}){
 info({}) // name: Dani, age: 25
 
 /*
-    si recibe un valor y el otro no
+    if it recieves the 1st value but not the 2nd
 */
 
 var person = {
@@ -152,7 +151,7 @@ function info({name = 'Dani', age = 25}){
 info(person) // name: Dani, age: 25
 
 /* 
-    que pasa si hay un objeto dentro un objeto y queremos destructurar?
+    what happens if there is an object inside another object and we want to destructure it?
 */
 
 var person = {
@@ -165,7 +164,7 @@ var person = {
 const { data: { name, age } } = person
 console.log(name, age) // Dani 25
 
-// esta es una forma visualmente mejor de hacerlo
+// this is one visible better way to do it
 
 const { name, age } = person.data
 console.log(name, age) // Dani 25

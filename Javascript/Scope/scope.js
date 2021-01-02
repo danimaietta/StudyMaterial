@@ -5,44 +5,44 @@
 
 
 
-// Ejemplo 1   
+// Example 1   
 
-var texto = "Texto"         // 1. texto es undefined   -   2. texto es igual a "Texto"
+var text = "Text"         // 1. text is undefined        -   2. text is equal to "Text"
 
-function imprimir(){        // 1. se crea la funcion   -   2. nada     
+function print(){        // 1. it creates the function   -   2. nothing     
   console.log("mensaje")
 }
 
-imprimir()                  // 1. nada                 -   2. se ejecuta imprimir()
+print()                  // 1. nothing                 -   2. it executes print()
 
 
 
 
 
-// Ejemplo 2
+// Example 2
 
-var a           // 1. a es undefined   -   2. nada
-console.log(a)  // 1. nada             -   2. ejecuta console.log(a)
-a = 'a'         // 1. nada             -   2. a = 'a'
-
-
+var a           // 1. a is undefined      -   2. nothing
+console.log(a)  // 1. nothing             -   2. it executes console.log(a)
+a = 'a'         // 1. nothing             -   2. a = 'a'
 
 
 
-// Ejemplo 3
 
-a()                 // 1. nada   -   2. se ejecuta a()
-//b()               // 1. nada   -   2. se ejecuta b()
 
-function a(){       // 1. se crea la funcion   -   2. nada
+// Example 3
+
+a()                         // 1. nothing                   -   2. it executes a()
+//b()                       // 1. nothing                   -   2. it executes b()
+
+function a(){               // 1. it creates the function   -   2. nothing
   console.log('hoisting method a')
 }
 
-var b = function(){ // 1. b es undefined   -   2. b es igual a function(){ console.log('hoisting method b') }
+var b = function(){         // 1. b is undefined            -   2. b is equal to function(){ console.log('hoisting method b') }
   console.log('hoisting method b')
 }
 
-b()                 // 1. nada   -   2. se ejecuta b()
+b()                         // 1. nothing                   -   2. it executes b()
 
 
 
@@ -52,20 +52,20 @@ b()                 // 1. nada   -   2. se ejecuta b()
 ********************* */
 
 
-// Ejemplo 1 - Function Scope
+// Example 1 - Function Scope
 
-function ejemplo(){
-    var texto = "Hola Mundo"
-    console.log("La variable texto es: " + texto) // La variable texto es: Hola Mundo
+function example(){
+    var text = "Hello World"
+    console.log("The variable text is: " + text) // The variable text is: Hello World
 }
 
-ejemplo()
+example()
 
-console.log("La variable texto es: " + texto) // Uncaught ReferenceError: texto is not defined
+console.log("The variable text is: " + text) // Uncaught ReferenceError: text is not defined
 
 
 
-// Ejemplo 2 - Block Scope
+// Example 2 - Block Scope
 
 if(true){
     var a = 'a'
@@ -76,35 +76,35 @@ console.log(a) // a
 console.log(b) // Uncaught ReferenceError: b is not defined
 
 
-// Ejemplo 3 - var vs let
+// Example 3 - var vs let
 
 // using var
 
 var names = ['Heisenberg', 'Saul', 'Mike', 'Tuco']
 
-function iterar(arr){
+function iterate(arr){
   for(var i=0; i < arr.length; i++){
     console.log(names[i]) // Heisenberg Saul Mike Tuco
   }
-  // Supongamos que aqui pasa mas codigo
+  // Lets supose here is more code
   console.log(i) // 4
 }
 
-iterar(names)
+iterate(names)
 
 // using let
 
 var names = ['Heisenberg', 'Saul', 'Mike', 'Tuco']
 
-function iterar(arr){
+function iterate(arr){
   for(let i=0; i < arr.length; i++){
     console.log(names[i]) // Heisenberg Saul Mike Tuco
   }
-  // Supongamos que aqui pasa mas codigo
+  // Lets supose here is more code
   console.log(i) // Uncaught ReferenceError: i is not defined
 }
 
-iterar(names)
+iterate(names)
 
 // using const
 
@@ -115,11 +115,11 @@ pi = 10 // Uncaught TypeError: Assignment to constant variable
 
 // Good practice using const
 
-const buenaPractica = function(){
-  console.log('Esto es una buena practica')
+const goodPractice = function(){
+  console.log('This is a good practice')
 }
   
-buenaPractica()
+goodPractice()
 
 
 

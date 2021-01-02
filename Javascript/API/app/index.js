@@ -16,11 +16,3 @@ getEarth(-95, 29.78, '2018-01-01', 0.10).then(earth => console.log('earth', eart
 
 // apod, sometimes fails for date
 getAPOD().then(apod => console.log('apod', apod))
-
-const array = ['👻','👽','👾','🤖','🎃']
-
-// normal for
-
-for(let i=0; i<array.length; i++){
-    console.log(array[i])
-}

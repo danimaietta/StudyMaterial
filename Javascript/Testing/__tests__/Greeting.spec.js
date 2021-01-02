@@ -12,7 +12,6 @@ describe("Check Greeting component functionality ", () => {
 
     it("renders a message", () => {
         const { container, getByText } = render(<Greeting />)
-        expect(getByText('Hello World!'), 'The component should have: Hello World!').toBeInTheDocument()
         expect(container.firstChild, 'The component should match the snapshot').toMatchSnapshot(snapshot)
     })
 

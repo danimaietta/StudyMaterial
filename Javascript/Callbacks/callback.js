@@ -2,35 +2,35 @@
         CALLBACK
 ******************** */
 
-// callback con setTimeout
+// callback with setTimeout
 var callback = function() {
     console.log("Done!")
 }
 
 setTimeout(callback, 5000);
 
-// callback con metodos normales
-function saludar(nombre) {
-    alert('Hola ' + nombre)
+// callback with normal methods
+function greeting(name) {
+    alert('Hi ' + name)
 }
   
-function despedir(nombre){
-    alert('Adios ' + nombre)
+function goodBye(name){
+    alert('Goodbye ' + name)
 }
   
-function procesarEntradaUsuario(callback) {
-    var nombre = prompt('Por favor ingresa tu nombre.')
-    callback(nombre);
+function processUserEntry(callback) {
+    var name = prompt('Please insert your name.')
+    callback(name);
 }
   
-procesarEntradaUsuario(despedir);
+processUserEntry(goodBye);
 
 // Asynchronous vs Synchronous 
 
-var sincrono = () => console.log("Do something") 
-sincrono()
+var synchronous = () => console.log("Do something") 
+synchronous()
 setTimeout(() => console.log("Done!"), 5000)
-sincrono()
+synchronous()
 
 // Callback hell
 

@@ -1,26 +1,25 @@
 /*
-    Ambos metodos hacen lo mismo
+    Both methods do the same
 */
 
-// sin arrow function
-const saludar = function(nombre){
-    return "Salu2 " + nombre
+// without arrow function
+const salute = function(name){
+    return "Hi " + name
 }
 
-// con arrow function
-const saludar = (nombre) => {
-    return "Salu2 " + nombre
+// with arrow function
+const salute = (name) => {
+    return "Hi " + name
 }
 
-// Funciones de una sola linea
-const saludar = (nombre) => "Salu2 " + nombre
+// one line functions
+const salute = (name) => "Hi " + name
 
-
-// cuando solo se envia un solo parametro se pueden quitar los ()
-const saludar = nombre => "Salu2 " + nombre
+// when it only has one argument you can take out the ()
+const salute = name => "Hi " + name
 
 
 /*
-    Debajo de cada metodo colocar:
+    Under each method use
 */
-console.log(saludar("Fernanda"))
+console.log(salute("Fernanda"))

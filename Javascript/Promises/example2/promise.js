@@ -11,13 +11,13 @@ const actionThree = new Promise(resolve => {
 })
 
 
-// Cada acción se ejecuta cuando termine el tiempo
+// Each action executes when the time ends
 actionOne.then(msg => console.log(msg))
 actionTwo.then(msg => console.log(msg))
 actionThree.then(msg => console.log(msg))
 
-// Una vez todas terminan devuelve un array con los datos retornados por resolve
-// Promise.race ejecuta .then de la primera promesa que termine
+// Once every method is finished it returns an array with the data returned by resolve
+// Promise.race execute .then of the 1st promise that ends
 Promise.all([
     actionOne,
     actionTwo,

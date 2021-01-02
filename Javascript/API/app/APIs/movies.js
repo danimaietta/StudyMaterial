@@ -8,4 +8,4 @@ export function getAllMovies(){
     .catch(error => console.log('getAllMovies', error))
 }
 
-// fetch es una función asincronica
+// fetch is an asynchronous function

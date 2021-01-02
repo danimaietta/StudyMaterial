@@ -1,6 +1,6 @@
 /*
-    Tener presente que cada archivo tiene un proposito especifico
-    Aqui solo se maneja informacion, nada de interfaz
+    Have present that each file has a specific purpose
+    Here it just handles information, nothing of interace
 */
 
 const addMovie = (title, description) => {

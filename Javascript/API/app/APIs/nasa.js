@@ -17,4 +17,4 @@ export function getEarth(lon, lat, date, dim){
     .catch(error => console.log('NASA getEarth service', error))
 }
 
-// fetch es una función asincronica
+// fetch is an asynchronous function

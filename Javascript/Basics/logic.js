@@ -1,6 +1,6 @@
 /*
-    Se recomienda copiar y pegar pedazos de codigo en https://playcode.io/
-    para ver resultados
+    Copy and paste the pieces of code right here: https://playcode.io/
+    to see results
 */
 
 console.log('hi')
@@ -9,8 +9,8 @@ console.log('hi')
         VARIABLES
 ********************** */
 
-var ejemplo // declarar
-ejemplo = "texto de ejemplo" // inicializar
+var ejemplo // declaration
+ejemplo = "texto de ejemplo" // initialization
 
 var name = "Daniel" // String
 name = "Felipe"
@@ -20,25 +20,25 @@ var masculine = true // Boolean
 var child = null // Null
 var message // Undefined (no specificied value)
 
-// concatenar
-var texto = "hola " + "mundo"
-console.log("El texto dice: " + texto) // hola mundo
+// concatenation
+var texto = "hello " + "world"
+console.log("The text says: " + texto) // hello world
 
-// operaciones
+// operations
 var resultado = 10 * 10 / 2 + 5
 console.log(resultado) // 55
 
-// sobreescribir una variable
+// overwrite a variable
 var sum = 10
 sum = sum + 10
 console.log(sum)
 
 
 /* **********************
-        ARREGLOS
+        ARRAYS
 ********************** */
 
-var arregloVacio = [] // new Array()
+var emptyArray = [] // new Array()
 
 var names = ["Felipe", "Daniel", "Juan", "Jason"]
 var numbers = [1, 4, 6, 3, 99, 120]
@@ -47,16 +47,16 @@ var booleans = [true, false, false, true, false]
 names[2] = "Peter"
 console.log(names) // ["Felipe", "Daniel", "Peter", "Jason"]
 
-// Mala practica
+// Bad Practice
 var nono = [1, "esto no se hace", 2]
 
-//Acceder al valor de un arreglo
+// Accessing the value of an array
 console.log("names[0]", names[0]) // Felipe
 console.log("names[1]", names[1]) // Daniel
 
 
 /* **********************
-        OBJETOS
+        OBJECTS
 ********************** */
 
 var objetoVacio = {} // new Object()
@@ -85,7 +85,7 @@ console.log(person.age) // 30
 
 
 /* **********************
-        FUNCIONES
+        FUNCTIONS
 ********************** */
 
 function printName(name){
@@ -144,31 +144,31 @@ console.log(1 === true) // false
 */
 
 if(name == "Daniel"){
-    console.log("si es Daniel")
+    console.log("it is Daniel")
 }else if(age == 25){
-    console.log("no es Daniel pero tiene la edad de Daniel")
+    console.log("is not Daniel but he/she has the age of Daniel")
 }else{
     console.log("no es Daniel")
 }
 
 if(age > 25){
-    console.log("Es mas viejo que Daniel")
+    console.log("is older than Daniel")
 }else{
-    console.log("Es mas joven que Daniel")
+    console.log("is younger than Daniel")
 }
 
 //    &&
 if(name == "Daniel" && age == 25){
-    console.log("si es Daniel")
+    console.log("it is Daniel")
 }else{
-    console.log("no es Daniel")
+    console.log("it's not Daniel")
 }
 
 //    ||
 if(name == "Daniel" || age == 25){
-    console.log("Puede ser Daniel o alguien que tenga 25 años")
+    console.log("can be Daniel or someone who has 25 years old")
 }else{
-    console.log("no es Daniel y tampoco tiene 25 años")
+    console.log("it's not Daniel y neither has 25 años")
 }
 
 //    &&  and  ||
@@ -180,9 +180,9 @@ console.log(false || false) // false
 
 //    &&  and  ||   mixed
 if(masculine == true && name == "Daniel" || age == 25){
-    console.log("Es Daniel o alguien con 25 años y es hombre")
+    console.log("is Daniel or someone with 25 years and is a man")
 }else{
-    console.log("Es una mujer o un hombre que no se llama Daniel ni tiene 25 años")
+    console.log("is a woman or a man that is not Daniel and doesn't have 25 years")
 }
 
 
@@ -222,16 +222,16 @@ console.log(day)
     For
 */
 
-// for basico
+// basic for
 
 for(var i=1; i <= 5; i++){
-    console.log("Esta es la iteracion numero " + i)
+    console.log("This is the iteration number " + i)
 }
 
-// for con arreglos
+// for with array
 
 var carros = ["BMW", "Mercedes-Benz", "Audi", "Lexus", "Renault", "Ford"]
 
 for(var i=0; i < carros.length; i++){
-  console.log("Estoy manejando un " + carros[i])
+  console.log("im driving a " + carros[i])
 }

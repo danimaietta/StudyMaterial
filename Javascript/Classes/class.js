@@ -1,32 +1,32 @@
 /* *********************************************************************************************
   
-class es una palabra reservada
+class is a reserved word
 
-class es para clasificar objetos, un class es un objeto
+class is to clasify objects, a class is an object
   
-las clases se utilizan cuando queremos crear multiples objetos con las mismas propiedades
+classes are used when we want to create multiple objects with the same properties
 
 ********************************************************************************************* */
 
 class Car {
     constructor(name, year) {
-      this.name = name; // con this nos aseguramos que las variables sean propias de la clase
-      this.year = year; // y que no se confunda con los parametros
+      this.name = name; // with 'this' we asure that the variables are from the class
+      this.year = year; // and to not be confused which are parameters
     }
 }
 
-let myCar1 = new Car("Ford", 2014); // new llama al constructor, new y constructor tambien son palabras reservadas
-let myCar2 = new Car("Audi", 2019); // Car es el tipo de objeto que se va a crear
+let myCar1 = new Car("Ford", 2014); // 'new' calls the constructor, new and the constructor also are reserved words
+let myCar2 = new Car("Audi", 2019); // Car is the type of the object 
 
 console.log(myCar1.name) // Ford
 console.log(myCar2.year) // 2019
 
 
 /* ********************************************
-    misma clase pero utilizando metodos
+    same class but adding methods
 ******************************************** */
 
-// dentro de una clase no es necesario especificar function, con solo los () ya sabe
+// a function inside of a class there is not need to write 'function', with just () it knows
 
 class Car {
     constructor(name, year) {
@@ -45,7 +45,7 @@ console.log(`my car is ${myCar.age(year)} years old`) // my car is 6 years old
 
 /* ********************************************
                 MINDBLOWN
-    Los tipos de variables son classes
+    The types of variables are classes
 ******************************************** */
 
 var text = String('hi')

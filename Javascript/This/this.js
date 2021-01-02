@@ -1,18 +1,19 @@
 /* *******************************
-  this apunta siempre al window
+  'this' always points to the nearest object
+  'this' outside of an object points to the window object
 ******************************* */
 
-console.log(this) // object window
+console.log('console.log(this):', this) // window object
 
 /* *******************************
-  this y window son implicitos
+  this y window are implicit
 ******************************* */
 
 this.window.document.getElementById("id")
 document.getElementById("id")
 
 /* *******************************
-  la verdadera utilidad de this
+  the truth useful of this
 ******************************* */
 
 var person = {
@@ -23,10 +24,10 @@ var person = {
     }
 };
 
-console.log(person.fullName()) // Daniel Maietta
+console.log('good practice:', person.fullName()) // Daniel Maietta
 
 /* *******************************
-  mala practica
+  bad practice
 ******************************* */
 
 var person = {
@@ -37,10 +38,10 @@ var person = {
   }
 };
 
-console.log(person.fullName()) // Daniel Maietta
+console.log('bad practice:', person.fullName()) // Daniel Maietta
 
 /* ********************************************
-  arrow function hace que this apunte a window
+  arrow function makes 'this' to point to the window
 ******************************************** */
 
 var person = {
@@ -49,15 +50,15 @@ var person = {
   fullName : () => this.firstName + " " + this.lastName
 };
 
-console.log(person.fullName()) // Daniel Maietta
+console.log('with arrow function:', person.fullName()) // undefined undefined
 
 /* *******************************
-  METODOS RELACIONADOS A THIS
+  METHODS RELATED TO THIS
 ******************************* */
 
 /* *******************************
   call
-    el this de fullName() apuntara person1 
+    the this in fullName() will point to person1 
 ******************************* */
 
 var person = {
@@ -75,9 +76,9 @@ var person2 = {
 }
 var x = person.fullName.call(person1)
 
-console.log(x) // John Doe
+console.log('call:', x) // John Doe
 
-// call con parametros
+// call with parameters
 
 var person = {
   fullName: function(city, country) {
@@ -94,11 +95,11 @@ var person2 = {
 }
 var x = person.fullName.call(person1, "Oslo", "Norway")
 
-console.log(x) // John Doe Oslo Norway
+console.log('call with parameters:', x) // John Doe Oslo Norway
 
 /* *******************************
   apply
-    igual que call pero el segundo parametro es un array [] 
+    same that call but the second parameter is an array [] 
 ******************************* */
 
 var person = {
@@ -115,13 +116,13 @@ var person2 = {
   lastName: "Doe"
 }
 var x = person.fullName.apply(person1, ['Oslo', 'Norway']); 
-console.log(x) // John Doe Oslo Norway
+console.log('apply:', x) // John Doe Oslo Norway
 
 /* *********************************************************************************************
   bind
-    vincula this a una funcion externa (fullName2) de un objeto con un metodo que use this (fullName)
+    binds this to an external function (fullName2) of an object with a method that use this (fullName)
 
-    si quisiera tener la funcion de un objeto que usa this debemos usar bind
+    if we want to have the function of an object that use this we must use bind
 ********************************************************************************************* */
 
 var person = {
@@ -133,4 +134,4 @@ var person = {
 }
 
 var fullName2 = person.fullName.bind(person); 
-console.log(fullName2()) // John Doe
+console.log('bind:', fullName2()) // John Doe

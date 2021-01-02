@@ -1,0 +1,83 @@
+[33mcommit b0e8ebf1f59a0ec0ac52a613a64ea5b6ef122725[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Daniel Maietta Esquivel <danimaietta1@gmail.com>
+Date:   Wed Nov 11 06:43:59 2020 -0600
+
+    Asynchronous examples done and AsyncAwait example done along with Promises example 1 2 and 3
+
+[33mcommit 1256ebd917df2577cfac63a61b6719bef38bd14c[m
+Author: Daniel Maietta Esquivel <danimaietta1@gmail.com>
+Date:   Mon Nov 9 12:53:01 2020 -0600
+
+    Promises added, few touches to API
+
+[33mcommit e71459557cd8bb5261e13a47b71cff8d3ef7d508[m
+Author: Daniel Maietta Esquivel <danimaietta1@gmail.com>
+Date:   Wed Oct 28 12:50:41 2020 -0600
+
+    JSON example finished, babel and npm updated
+
+[33mcommit 72a0a3d2d2d00e8a1f7dc3316d67b1ccd629aec4[m
+Author: Daniel Maietta Esquivel <danimaietta1@gmail.com>
+Date:   Sat Oct 24 11:09:05 2020 -0600
+
+    npm run prod in /Babel
+
+[33mcommit 3a200c2d2870815153f1517f496c2abb51ff81d0[m
+Author: Daniel Maietta Esquivel <danimaietta1@gmail.com>
+Date:   Fri Oct 23 08:58:12 2020 -0600
+
+    quick fix in index.js
+
+[33mcommit 02bea9538e3387155a5e715c3f6c2223ede929bd[m
+Author: Daniel Maietta Esquivel <danimaietta1@gmail.com>
+Date:   Fri Oct 23 08:09:22 2020 -0600
+
+    few touches to modules example
+
+[33mcommit 3e3ba1c948a201510bfdd70d8cf7aeab65be964a[m
+Author: Daniel Maietta Esquivel <danimaietta1@gmail.com>
+Date:   Fri Oct 23 08:02:23 2020 -0600
+
+    Babel and modules examples work, async await files renamed
+
+[33mcommit 08e598be147deffc8aa311cc7a15b7c01af5d387[m
+Author: Daniel Maietta Esquivel <danimaietta1@gmail.com>
+Date:   Wed Oct 21 06:16:31 2020 -0600
+
+    destructuring added, Asyncronous gets identated
+
+[33mcommit fa70ea91e0382e49d4aa25efcced33490c634f65[m
+Author: Daniel Maietta Esquivel <danimaietta1@gmail.com>
+Date:   Mon Oct 19 07:18:08 2020 -0600
+
+    se finaliza this.js y class.js
+
+[33mcommit 6fe16a13469666d41a7a60e958cac4b308ca9c65[m
+Author: Daniel Maietta Esquivel <danimaietta1@gmail.com>
+Date:   Thu Oct 15 06:29:31 2020 -0600
+
+    Test 3 is finished!
+
+[33mcommit f5aa684a78aafcaafdbc73b5fb54fdb6d3cda1c8[m
+Author: Daniel Maietta Esquivel <danimaietta1@gmail.com>
+Date:   Wed Oct 14 16:55:40 2020 -0600
+
+    Javascript/DOM is finished!
+
+[33mcommit b3a363a5e4af8bee24ff7fa37a5a39314183bdd6[m
+Author: Daniel Maietta Esquivel <danimaietta1@gmail.com>
+Date:   Mon Oct 12 16:59:46 2020 -0600
+
+    Course, CSS and Javascript folders where added
+
+[33mcommit 625902adec346af68692429dec6492beb93bc2bf[m
+Author: Daniel Maietta Esquivel <danimaietta1@gmail.com>
+Date:   Mon Oct 12 16:57:57 2020 -0600
+
+    Course, CSS and Javascript folders where added
+
+[33mcommit 27d2464057127b8b3a91f7e366e466a65441599c[m
+Author: Daniel Maietta Esquivel <9357421+danimaietta@users.noreply.github.com>
+Date:   Mon Oct 12 15:54:22 2020 -0600
+
+    Initial commit

@@ -1,8 +1,8 @@
 "use strict"
 
 /*
-    Los siguientes ejemplos van a dar error con use strict
-    Sin use strict deben de funcionar
+    The next examples will give error with 'use strict'
+    Without 'use strict' they should work
 */
 
 
