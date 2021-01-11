@@ -6,11 +6,11 @@ export default function User({ name, age, parent, admin, scores, employe={name: 
     return (
         <>
             <h2>Hello World {name}</h2>
-            <h2>Hello World {age}</h2>
-            <h2>Hello World {parent}</h2>
+            <h2>My age is {age}</h2>
+            <h2>I {parent ? 'have children' : "don't have children"}</h2>
             <h2>My boss is {admin.name}</h2>
             <h2>
-                My scores are {scores.map((score,i) => score + (scores.length-1 != i ? ',' : '') ) }
+                My scores are {scores.map((score,i) => score + (scores.length-1 != i ? ', ' : ''))}
             </h2>
             <h2>My employe is {employe.name}</h2>
         </>
