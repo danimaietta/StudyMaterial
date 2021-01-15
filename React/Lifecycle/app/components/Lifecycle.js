@@ -1,5 +1,8 @@
 import React from 'react'
 
+/*
+    Lifecycle methods only apply for class components
+*/
 export default class Lifecycle extends React.Component{
     constructor(props){
         super(props)
