@@ -27,7 +27,7 @@ export default function withHoverClassComponent(Component, propName = 'hovering'
       return (
         <div onMouseOver={this.mouseOver} onMouseOut={this.mouseOut}>
           <Component {...this.props} {...props} />
-          {this.state.hovering && <h4>Message when you hover in class component</h4>}
+          {this.state.hovering && <h4>Message when you hover in {this.props.message}</h4>}
         </div>
       )
     }

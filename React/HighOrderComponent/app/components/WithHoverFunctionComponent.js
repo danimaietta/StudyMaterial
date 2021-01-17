@@ -12,7 +12,7 @@ export default function withHoverFunctionComponent(Component, propName = 'hoveri
     return (
         <div onMouseOver={mouseOver} onMouseOut={mouseOut}>
             <Component hovering={hovering} {...props} />
-            {hovering && <h4>Message when you hover in function component</h4>}
+            {hovering && <h4>Message when you hover in {props.message}</h4>}
         </div>
     )
   }

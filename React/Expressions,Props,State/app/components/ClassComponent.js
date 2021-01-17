@@ -6,7 +6,9 @@ export default class ClassComponent extends React.Component {
     this.state = { displayMessage: 'Class Component'}
   }
 
-  changeMessage = () => this.setState({displayMessage: 'Class Component Changed'}, () => console.log('indeed it changed'))
+  changeMessage = () => this.setState({displayMessage: 'Class Component Changed'}, () => {
+    console.log('indeed it changed')
+  })
 
   addMessage = (message) => this.setState({ displayMessage: this.state.displayMessage.concat(message) })
 
