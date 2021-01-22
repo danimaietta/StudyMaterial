@@ -7,8 +7,7 @@ import Info from './components/Info'
 import Calendar from 'react-calendar';
 
 /*
-  Calendar will be our third-party component so we can prove
-  the inversion of control
+  Calendar is to test it with a third party component
 */
 function App() {
   const InfoWithHoverClass = withHoverClassComponent(Info)
@@ -19,7 +18,7 @@ function App() {
     <>
       <InfoWithHoverClass message="class component" />
       <InfoWithHoverFunction message="function component" />
-      <CalendarWithHover message="third-party calendar component"/>
+      <CalendarWithHover message="third-party calendar component" />
     </>
   )
 }
