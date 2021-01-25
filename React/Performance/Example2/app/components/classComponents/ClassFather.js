@@ -16,7 +16,7 @@ export default class ClassFather extends React.Component {
 
   componentWillUpdate(nextProps, nextState){
     if(nextState.number !== this.state.number){
-      this.sumatory = this.sumatory.bind({})    // so we don't have to rewrite the whole function  
+      this.sumatory = this.sumatory.bind({})    // so we don't have to rewrite the whole function and Child1 recognize it received a different prop
       this.result = slowFunction(nextState.number)
     }
   }
