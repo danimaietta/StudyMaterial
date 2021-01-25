@@ -13,7 +13,7 @@ this.window.document.getElementById("id")
 document.getElementById("id")
 
 /* *******************************
-  the truth useful of this
+  the useful truth of this
 ******************************* */
 
 var person = {
