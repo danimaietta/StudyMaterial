@@ -7,6 +7,10 @@ export default class Topics extends React.Component {
     super(props)
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    console.log('Topic comp', { prevProps })
+  }
+
   render() {
     return (
       <div>
@@ -26,6 +30,28 @@ export default class Topics extends React.Component {
             </Link>
           </li>
         </ul>
+
+        <button onClick={() => this.props.history.goBack()}>go back</button>
+        <button onClick={() => this.props.history.go(-2)}>go</button>
+        <button onClick={() => this.props.history.goForward(2)}>
+          go forward
+        </button>
+        <button
+          onClick={() =>
+            this.props.history.push(
+              `${this.props.match.url}/rendering?name=dani&lastName=maietta`
+            )
+          }
+        >
+          push to rendering
+        </button>
+        <button
+          onClick={() =>
+            this.props.history.replace(`${this.props.match.url}/rendering`)
+          }
+        >
+          replace to rendering
+        </button>
 
         <Route path={`${this.props.match.url}/:topicId`} component={Topic} />
         <Route

@@ -3,7 +3,7 @@ import Topic from './Topic'
 import { Route, Link } from 'react-router-dom'
 
 export default function Topics(props) {
-  console.log('Topics', { props })
+  console.log('Topics func', { props })
 
   return (
     <div>
