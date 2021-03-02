@@ -7,11 +7,8 @@ export default class Topics extends React.Component {
     super(props)
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    console.log('Topic comp', { prevProps })
-  }
-
   render() {
+    console.log('Topics comp', this.props)
     return (
       <div>
         <h2>Topics</h2>

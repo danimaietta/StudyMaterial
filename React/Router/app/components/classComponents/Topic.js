@@ -6,14 +6,11 @@ export default class Topic extends React.Component {
     super(props)
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    console.log('Topic comp', { prevProps })
-    const values = queryString.parse(prevProps.location.search)
+  render() {
+    console.log('Topic comp', this.props)
+    const values = queryString.parse(this.props.location.search)
     const { name, lastName } = values
     console.log(name, lastName)
-  }
-
-  render() {
     return <h4> {this.props.match.params.topicId} </h4>
   }
 }
