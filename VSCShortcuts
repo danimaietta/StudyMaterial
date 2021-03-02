@@ -1,11 +1,17 @@
-F2                  over a word and it modifies the same words in the file
+F2                              over a word and it modifies the same words in the file
 
-Ctrl +              delete to erase a whole line of code
+Ctrl +                          delete to erase a whole line of code
 
-Ctrl + J            to join lines
+Ctrl + J                        to join lines
 
-Ctrl + Shift + O    to global navigate files by name
+Ctrl + Shift + O                to global navigate files by name
 
-Ctrl + Shift + F    to globaly find a word in any file
+Ctrl + P                        go to file by name
 
-Ctrl + `            to open and close the terminal
+Ctrl + Shift + F                to globaly find a word in any file
+
+Ctrl + `                        to open and close the terminal
+
+Select + Ctrl + Shift + L       write in many lines at the same time
+
+Select + Ctrl + D               write in many lines with the same name, the more you press Ctrl D the more lines it selects

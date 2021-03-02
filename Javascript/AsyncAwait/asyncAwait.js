@@ -1,18 +1,18 @@
 // Async Await
 
-function makeRequest(location){
+function makeRequest(location) {
   return new Promise((resolve, reject) => {
-      if(location === 'Google'){
-          resolve('Google says hi')
-      }else{
-          reject('We can only talk to Google')
-      }
+    if (location === 'Google') {
+      resolve('Google says hi')
+    } else {
+      reject('We can only talk to Google')
+    }
   })
 }
 
-function processRequest(response){
+function processRequest(response) {
   return new Promise(resolve => {
-      resolve(`Extra Information ${response}`)
+    resolve(`Extra Information ${response}`)
   })
 }
 
@@ -28,16 +28,15 @@ makeRequest('Google').then(res => {
 }).catch(err => console.log(err)) 
 */
 
-
 // Async Await solution
 
 const doWork = async () => {
-  try{
+  try {
     const res = await makeRequest('Google')
     const processedResponse = await processRequest(res)
     console.log(processedResponse)
-  }catch(err){
+  } catch (err) {
     console.log(err)
-  } 
+  }
 }
 doWork()
