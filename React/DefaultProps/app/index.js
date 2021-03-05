@@ -4,7 +4,7 @@ import './index.css'
 import ClassComponent from './components/ClassComponent'
 import FunctionComponent from './components/FunctionComponent'
 
-function App() { 
+function App() {
   return (
     <>
       <ClassComponent />
@@ -13,7 +13,4 @@ function App() {
   )
 }
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
-)
+ReactDOM.render(<App />, document.getElementById('app'))
