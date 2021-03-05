@@ -1,4 +1,5 @@
-F2                              over a word and it modifies the same words in the file
+F2                              over a word and it modifies the same 
+                                words in the file
 
 Ctrl +                          delete to erase a whole line of code
 
@@ -14,4 +15,6 @@ Ctrl + `                        to open and close the terminal
 
 Select + Ctrl + Shift + L       write in many lines at the same time
 
-Select + Ctrl + D               write in many lines with the same name, the more you press Ctrl D the more lines it selects
+Select + Ctrl + D               write in many lines with the same name, 
+                                the more you press Ctrl D the more lines 
+                                it selects
