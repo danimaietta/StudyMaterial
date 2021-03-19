@@ -1,105 +1,107 @@
 /*General*/
-html{
-    color: white;
-    font-family: Arial;
-    font-weight: bold;
-    height: 120vh;
-    background: black;
+html {
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  height: 120vh;
+  background: black;
 }
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-h4{
-    color: peru;
+h4 {
+  color: peru;
 }
-.positionSubject{
-    width: 98%;
-    height: 1%;
-    background: purple;
-    border-top: white solid 1px;
-    padding: 1%;
-    text-align: center;
+.positionSubject {
+  width: 98%;
+  height: 1%;
+  background: purple;
+  border-top: white solid 1px;
+  padding: 1%;
+  text-align: center;
 }
-.position{
-    width: 95%;
-    height: 5%;
-    background: black;
-    border-top: white solid 1px;
-    padding: 2.5%;
+.position {
+  width: 95%;
+  height: 5%;
+  background: black;
+  border-top: white solid 1px;
+  padding: 2.5%;
 }
-  
+
 /********************* Static ******************/
 
 .static {
-    display: inline-block;
-    width: 30%;
-    border: green dotted 1px;
-    padding: 0.5%;
-    color: white;
-    left: 50px; /* not affected*/
+  display: inline-block;
+  width: 30%;
+  border: green dotted 1px;
+  padding: 0.5%;
+  color: white;
+  left: 50px; /* not affected*/
 }
 
 /********************* Relative ******************/
 
-.relative, .relative2 {
-    position: relative;
-    width: 30%;
-    border: green dotted 1px;
-    padding: 0.5%;
-    color: white;
-    left: 50px; 
+.relative,
+.relative2 {
+  position: relative;
+  width: 30%;
+  border: green dotted 1px;
+  padding: 0.5%;
+  color: white;
+  left: 50px;
 }
 
 .relative2 {
-    display: inline-block;
+  display: inline-block;
 }
 
 /********************* Fixed ******************/
 
-.fixed, .fixed2 {
-    position: fixed;
-    width: 30%;
-    border: green dotted 1px;
-    padding: 0.5%;
-    color: white;
+.fixed,
+.fixed2 {
+  position: fixed;
+  width: 30%;
+  border: green dotted 1px;
+  padding: 0.5%;
+  color: white;
 }
 
 .fixed2 {
-    right: 0;
-    bottom: 0; 
+  right: 0;
+  bottom: 0;
 }
 
 /********************* Absolute ******************/
 
 .absoluteContainer {
-    border: green dotted 1px;
-    height: 60px;
-    width: 50%;
+  border: green dotted 1px;
+  height: 60px;
+  width: 50%;
 }
 
 .absolute {
-    position: absolute;
-    width: 30%;
-    border: green dotted 1px;
-    padding: 0.5%;
+  position: absolute;
+  width: 30%;
+  border: green dotted 1px;
+  padding: 0.5%;
 }
 
 /********************* Sticky ******************/
 
 .stickyContainer {
-    border: green dotted 1px;
-    height: 90px;
-    width: 50%;
-    overflow: scroll;
+  border: green dotted 1px;
+  height: 90px;
+  width: 50%;
+  overflow: scroll;
 }
 
 .sticky {
-    position: sticky;
-    margin: auto;
-    top: 5px;
-    width: 30%;
-    border: green dotted 1px;
-    padding: 0.5%;
-    border: blue solid 2px;
-    margin: 10px 20px 30px 40px;
+  position: sticky;
+  left: 10px;
+  top: 5px;
+  width: 30%;
+  border: green dotted 1px;
+  padding: 0.5%;
+  border: blue solid 2px;
+  margin: 10px 20px 30px 40px;
 }

@@ -20,7 +20,8 @@
         <div class="positionSubject"> Fixed </div>
         <div class="position">
           <h4> 
-            Its position is accorded to the viewport, so it's not affected by their fathers 
+            Its position is accorded to the viewport if top right left bottom is specified,
+            If not, then it's accorded to the nearest father 
             </br> and isn't affected by the scroll
           </h4>
           <div class="fixed"> Fixed div </div>
@@ -28,7 +29,8 @@
         </div>
         <div class="positionSubject"> Absolute </div>
         <div class="position">
-          <h4> Its position is accorded to the nearest father </h4>
+          <h4> Its position is accorded to the viewport if top right left bottom is specified,
+            If not, then it's accorded to the nearest father </h4>
           <div class="absoluteContainer"> Father
             <div class="absolute"> Absolute div 1</div>
             <div class="absolute"> Absolute div 2 </div>

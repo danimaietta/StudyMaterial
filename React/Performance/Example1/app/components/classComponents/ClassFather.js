@@ -30,13 +30,9 @@ export default class ClassFather extends React.Component {
         <ClassChild1 msg={value} />
         <MemoizedClassChild2 msg={value} />
         <ClassChild3 msg={value} />
-        <button onClick={() => this.toggleValue()}>
-          {' '}
-          Toggle global value{' '}
-        </button>
+        <button onClick={() => this.toggleValue()}>Toggle global value</button>
         <button onClick={() => this.setState({ fatherValue: !fatherValue })}>
-          {' '}
-          Toggle father value{' '}
+          Toggle father value
         </button>
       </>
     )

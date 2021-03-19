@@ -2,25 +2,25 @@
 
 /* Tier1 -->  style="color:tomato;" */
 
-#tier2{
+#tier2 {
   color: blue;
 }
 
-.tier3{
+.tier3 {
   color: aqua;
 }
 
-/* Tier4 */
-h1{
+/* Tier5 */
+h1 {
   color: green;
 }
 
-/* Tier5 */
-h1{
+/* Tier4 */
+h1 {
   color: blueviolet;
 }
 
 /* Tier6 */
-html{
+html {
   color: black;
 }

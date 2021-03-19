@@ -1,0 +1,30 @@
+html,
+body,
+#app {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+}
+
+div {
+  height: 10vh;
+}
+
+button {
+  height: 30px;
+  width: 180px;
+  font-size: 15px;
+}
+
+.dark {
+  background-color: black;
+}
+
+.light {
+  background-color: white;
+}
