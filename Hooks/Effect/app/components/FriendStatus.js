@@ -7,31 +7,29 @@ export default function FriendStatus(props) {
     function handleStatusChange(status) {
       setIsOnline(status.isOnline)
     }
-    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange)
+    ChatAPI.subscribe(props.friend.id, handleStatusChange)
 
     return function cleanup() {
-      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange)
+      ChatAPI.unsubscribe(props.friend.id, handleStatusChange)
     }
   })
 
   if (isOnline === null) {
     return 'Loading Friend...'
   }
-  return isOnline ? 'Online' : 'Offline'
+  return isOnline ? `Online ${props.friend.id}` : `Offline ${props.friend.id}`
 }
 
 const ChatAPI = {
-  subscribeToFriendStatus(id, handleStatusChange) {
-    const isOnline = BD.findUser(id)
+  findUser(id) {
+    // Think this is an api method
+    return id == 1 ? true : false
+  },
+  subscribe(id, handleStatusChange) {
+    const isOnline = this.findUser(id)
     handleStatusChange({ isOnline })
   },
-  unsubscribeFromFriendStatus(id, handleStatusChange) {
+  unsubscribe(id, handleStatusChange) {
     handleStatusChange({ isOnline: false })
-  }
-}
-
-const BD = {
-  findUser(id) {
-    return id == 1 ? true : false
   }
 }

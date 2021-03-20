@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useReducer } from 'react'
 
 const postIds = [1, 2, 3, 4, 5, 6, 7, 8]
 
@@ -9,23 +9,40 @@ function fetchPost(id) {
 }
 
 export default function Posts() {
-  const [post, setPost] = useState('...Loading')
-  const [loading, setLoading] = useState(true)
   const [index, setIndex] = useState(0)
-  const [error, setError] = useState(null)
+
+  function reducer(state, action) {
+    if (action.type === 'loading') {
+      return {
+        ...state,
+        loading: true
+      }
+    } else if (action.type === 'loadPost') {
+      return {
+        post: action.post,
+        loading: false,
+        error: null
+      }
+    } else if (action.type === 'error') {
+      return {
+        ...state,
+        loading: false,
+        error: action.error
+      }
+    }
+  }
+
+  const [posts, dispatch] = useReducer(reducer, {
+    post: '',
+    loading: true,
+    error: null
+  })
 
   useEffect(() => {
-    setLoading(true)
+    dispatch({ type: 'loading' })
     fetchPost(postIds[index])
-      .then(p => {
-        setLoading(false)
-        setPost(p)
-        setError(error)
-      })
-      .catch(e => {
-        setError(e)
-        setLoading(false)
-      })
+      .then(p => dispatch({ type: 'loadPost', post: p }))
+      .catch(e => dispatch({ type: 'error', error: e }))
   }, [index])
 
   console.log('renders')
@@ -33,14 +50,18 @@ export default function Posts() {
   return (
     <>
       {index + 1 < postIds.length ? (
-        loading ? (
+        posts.loading ? (
           <p>Loading...</p>
         ) : (
           <>
-            <div>{post.title}</div>
-            <div>{post.body}</div>
+            <div>{posts.post.title}</div>
+            <div>{posts.post.body}</div>
             <button onClick={() => setIndex(index + 1)}> next post </button>
-            {error ? <p className='error'>{error.message}</p> : <> </>}
+            {posts.error ? (
+              <p className='error'>{posts.error.message}</p>
+            ) : (
+              <> </>
+            )}
           </>
         )
       ) : (
