@@ -6,6 +6,7 @@ import BadCounter from './components/BadCounter'
 import GoodCounter from './components/GoodCounter'
 import ListOfThings from './components/ListOfThings'
 import Contact from './components/Contact'
+import MultipleSets from './components/MultipleSets'
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <ListOfThings />
       <h1>Object:</h1>
       <Contact />
+      <h1>Multiple sets</h1>
+      <MultipleSets />
     </>
   )
 }

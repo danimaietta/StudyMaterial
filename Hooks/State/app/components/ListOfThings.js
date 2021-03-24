@@ -16,8 +16,6 @@ export default function ListOfThings() {
     setItemName('')
   }
 
-  console.count('List of Things renders')
-
   return (
     <>
       <form onSubmit={addItem}>

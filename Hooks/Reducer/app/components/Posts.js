@@ -9,7 +9,7 @@ function fetchPost(id) {
 }
 
 export default function Posts() {
-  const [index, setIndex] = useState(0)
+  const [page, setPage] = useState(0)
 
   function reducer(state, action) {
     if (action.type === 'loading') {
@@ -39,24 +39,38 @@ export default function Posts() {
   })
 
   useEffect(() => {
-    dispatch({ type: 'loading' })
-    fetchPost(postIds[index])
-      .then(p => dispatch({ type: 'loadPost', post: p }))
-      .catch(e => dispatch({ type: 'error', error: e }))
-  }, [index])
+    callPost(page)
+  }, [])
 
-  console.log('renders')
+  const callPost = async page => {
+    dispatch({ type: 'loading' })
+    try {
+      const post = await fetchPost(postIds[page])
+      dispatch({ type: 'loadPost', post })
+    } catch (error) {
+      dispatch({ type: 'error', error })
+    }
+  }
+
+  console.log('renders', page)
 
   return (
     <>
-      {index + 1 < postIds.length ? (
+      {page + 1 < postIds.length ? (
         posts.loading ? (
           <p>Loading...</p>
         ) : (
           <>
             <div>{posts.post.title}</div>
             <div>{posts.post.body}</div>
-            <button onClick={() => setIndex(index + 1)}> next post </button>
+            <button
+              onClick={() => {
+                setPage(page + 1)
+                callPost(page + 1)
+              }}
+            >
+              next post
+            </button>
             {posts.error ? (
               <p className='error'>{posts.error.message}</p>
             ) : (
