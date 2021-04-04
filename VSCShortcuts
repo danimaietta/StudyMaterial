@@ -3,7 +3,7 @@ F2                              over a word and it modifies the same
 
 Ctrl +                          delete to erase a whole line of code
 
-Ctrl + J                        to join lines
+Ctrl + J                        to hide/show the terminal
 
 Ctrl + Shift + O                to global navigate files by name
 
