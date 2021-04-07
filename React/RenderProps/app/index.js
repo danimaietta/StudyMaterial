@@ -4,7 +4,7 @@ import './index.css'
 import WithHoverClassComponent from './components/WithHoverClassComponent'
 import WithHoverFunctionComponent from './components/WithHoverFunctionComponent'
 import Info from './components/Info'
-import Calendar from 'react-calendar';
+import Calendar from 'react-calendar'
 
 /*
   Calendar is to test it with a third party component
@@ -12,20 +12,17 @@ import Calendar from 'react-calendar';
 function App() {
   return (
     <>
-      <WithHoverClassComponent message="class component">
-        {(hovering) => <Info hovering={hovering} message="class" />}
+      <WithHoverClassComponent message='class component'>
+        {() => <Info message='class' />}
       </WithHoverClassComponent>
-      <WithHoverFunctionComponent message="function component">
-        {(hovering) => <Info hovering={hovering} message="function" />}
+      <WithHoverFunctionComponent message='function component'>
+        {() => <Info message='function' />}
       </WithHoverFunctionComponent>
-      <WithHoverFunctionComponent message="third-party calendar component">
-        {(hovering) => <Calendar hovering={hovering} />}
+      <WithHoverFunctionComponent message='third-party calendar component'>
+        {() => <Calendar />}
       </WithHoverFunctionComponent>
     </>
   )
 }
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
-)
+ReactDOM.render(<App />, document.getElementById('app'))
