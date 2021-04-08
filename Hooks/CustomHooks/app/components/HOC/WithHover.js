@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 
-export default function withHoverFunctionComponent(
-  Component,
-  propName = 'hovering'
-) {
-  return function WithHover(props) {
+export default function WithHover(Component) {
+  return function withHover(props) {
     const [hovering, setHovering] = useState(false)
 
     const mouseOver = () => setHovering(true)
@@ -12,8 +9,8 @@ export default function withHoverFunctionComponent(
 
     return (
       <div onMouseOver={mouseOver} onMouseOut={mouseOut}>
-        <Component hovering={hovering} {...props} />
-        {hovering && <h4>Message when you hover in {props.message}</h4>}
+        <Component {...props} />
+        {hovering && <h5>Message when you hover {props.message}</h5>}
       </div>
     )
   }
