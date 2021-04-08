@@ -6,14 +6,12 @@ import Info from '../Info'
 
 /*
   Enhanced Components:  Info 
-  RP:                   WithHover, WithTheme, WithAuth
+  RP:                   useHover, useTheme, useAuth
 */
 export default function CustomHook() {
   const [hovering, attrs] = useHover()
   const theme = useTheme('blue')
   const authed = useAuth(1234)
-
-  console.log({ ...attrs })
 
   const message = {
     message: 'hello world'
