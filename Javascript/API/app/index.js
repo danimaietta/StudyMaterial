@@ -12,7 +12,9 @@ getAllMovies().then(movies => console.log('movies', movies))
 
 // this example is meant to fail
 // earth: lon, lat, date, dim
-getEarth(-95, 29.78, '2018-01-01', 0.10).then(earth => console.log('earth', earth)) 
+getEarth(-95, 29.78, '2018-01-01', 0.1).then(earth =>
+  console.log('earth', earth)
+)
 
 // apod, sometimes fails for date
 getAPOD().then(apod => console.log('apod', apod))
