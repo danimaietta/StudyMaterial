@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Theme() {
+export default function Theme({ hola }) {
   const [theme, setTheme] = React.useState('light')
 
   const toDark = () => setTheme('dark')
