@@ -1,10 +1,9 @@
-"use strict"
+'use strict'
 
 /*
     The next examples will give error with 'use strict'
     Without 'use strict' they should work
 */
-
 
 // not using var, const, let
 /*
@@ -12,13 +11,11 @@ i = 0
 console.log(i)
 */
 
-
 // delete variable
 /*
 var x = 1
 delete x
 */
-
 
 // duplicate a parameter
 /*
@@ -29,11 +26,10 @@ function x(p1, p1, p1) {
 x(1, 2, 3)
 */
 
-// octal numeric literals 
+// octal numeric literals
 /*
 var x = 010
 */
-
 
 // read-only property
 /*
@@ -42,7 +38,6 @@ Object.defineProperty(obj, "x", {value:0, writable:false});
 obj.x = 3.14;
 */
 
-
 // global this is undefined
 /*
 function printThis(){
@@ -50,7 +45,6 @@ function printThis(){
 }
 printThis()
 */
-
 
 // reserved words
 /*
@@ -66,7 +60,3 @@ var yield = 9
 var eval = 10
 var arguments = 11
 */
-
-
-
-
