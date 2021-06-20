@@ -13,8 +13,9 @@ Ctrl + Shift + F                to globaly find a word in any file
 
 Ctrl + `                        to open and close the terminal
 
-Select + Ctrl + Shift + L       write in many lines at the same time
+Ctrl + D                        edit multiple lines with the same name, the more
+                                you press Ctrl D the more lines it selects
 
-Select + Ctrl + D               write in many lines with the same name, 
-                                the more you press Ctrl D the more lines 
-                                it selects
+Ctrl + Alt + up down arrow      edit multiple lines that are within the up and down selections
+
+Alt + Click                     edit multiple lines in every click you did
