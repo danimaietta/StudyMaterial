@@ -1,0 +1,23 @@
+#red {
+  /* id = # */
+  color: red;
+}
+
+.blue {
+  /* class = . */
+  color: blue;
+}
+
+p {
+  font-size: 30px;
+}
+
+button {
+  border: 5px solid blueviolet;
+}
+
+/*********
+  Selector: #titulo1, .titulo2, p, button
+  Propiedad: color, font-size, border
+  Valor: black, blue, 30px, 5px solid blueviolet
+*/
