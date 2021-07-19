@@ -1,21 +1,21 @@
 F2                              over a word and it modifies the same 
                                 words in the file
 
-Ctrl +                          delete to erase a whole line of code
+Ctrl                            delete to erase a whole line of code
 
-Ctrl + J                        to hide/show the terminal
+Ctrl  J                         to hide/show the terminal
 
-Ctrl + Shift + O                to global navigate files by name
+Ctrl  Shift  O                  to global navigate files by name
 
-Ctrl + P                        go to file by name
+Ctrl  P                         go to file by name
 
-Ctrl + Shift + F                to globaly find a word in any file
+Ctrl  Shift  F                  to globaly find a word in any file
 
-Ctrl + `                        to open and close the terminal
+Ctrl  `                         to open and close the terminal
 
-Ctrl + D                        edit multiple lines with the same name, the more
+Ctrl  D                         edit multiple lines with the same name, the more
                                 you press Ctrl D the more lines it selects
 
-Ctrl + Alt + up down arrow      edit multiple lines that are within the up and down selections
+Ctrl  Alt  up down arrow        edit multiple lines that are within the up and down selections
 
-Alt + Click                     edit multiple lines in every click you did
+Alt  Click                      edit multiple lines in every click you did

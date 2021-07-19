@@ -17,13 +17,13 @@ const obj = {
   prop3: 3
 }
 
-for (prop in obj) {
+for (let prop in obj) {
   console.log('for in: ', obj[prop]) // 1 2 3
 }
 
 // for of
 // shorted version of a normal for
-for (emoji of array) {
+for (let emoji of array) {
   console.log('for of: ', emoji) // 👻 👽 👾 🤖 🎃
 }
 

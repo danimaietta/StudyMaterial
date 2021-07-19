@@ -100,6 +100,8 @@ console.log(printNameAndAge('Daniel', 25)) // My name is Daniel and my age is 25
     PRIMITIVE vs REFERENCE
 ********************** */
 
+///////////// Example 1
+
 // Primitive
 
 var one = 1
@@ -122,6 +124,20 @@ anotherObj.prop = 'anotherProperty'
 
 console.log(anotherObj.prop) // anotherProperty
 console.log(obj.prop) // anotherProperty
+
+///////////// Example 2
+
+const a = [1, 2, 3]
+const b = [1, 2, 3]
+
+console.log(a === b) // false
+console.log(a.toString() === b.toString()) // true
+
+const c = { one: 1, two: 2, three: 3 }
+const d = { one: 1, two: 2, three: 3 }
+
+console.log(c === d) // false
+console.log(c.toString() === d.toString()) // true
 
 /* **********************
     LOGIC OPERATORS
@@ -177,9 +193,7 @@ console.log(false || false) // false
 if ((masculine == true && name == 'Daniel') || age == 25) {
   console.log('is Daniel or someone with 25 years and is a man')
 } else {
-  console.log(
-    "is a woman or a man that is not Daniel and doesn't have 25 years"
-  )
+  console.log("is a woman or a man that is not Daniel and doesn't have 25 years")
 }
 
 /*
