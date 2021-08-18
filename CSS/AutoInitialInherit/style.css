@@ -1,26 +1,27 @@
-body{
+body {
   height: 200vh;
 }
 
-.grand-father{
+.grand-father {
   background-color: royalblue;
   width: 500px;
 }
 
-.son{
-  display: inline-block;
+.son {
   width: inherit;
 }
 
-.child-1{
+.child-1 {
+  display: inline-block;
   background-color: coral;
-  width: auto; 
+  width: 50px;
+  margin: auto;
 }
 
-.child-2{
-  background-color: crimson; 
+.child-2 {
+  background-color: crimson;
 }
 
-.child-3{
-  background-color: cornsilk; 
+.child-3 {
+  background-color: cornsilk;
 }

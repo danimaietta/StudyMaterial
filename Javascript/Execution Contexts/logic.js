@@ -23,81 +23,66 @@
 
 // Execution stack = many function creation
 /*
-  * Any function has his own execution context
-  * Finish in the execution phase
-  * When you create many it is a stack
-  * 
-*/
-
-
-
+ * Any function has his own execution context
+ * Finish in the execution phase
+ * When you create many it is a stack
+ *
+ */
 
 /* Event Loop */
 
-/*console.log("First")
+console.log('First')
 
-setTimeout(function(){
-  console.log("Second")
+setTimeout(function () {
+  console.log('Second')
 }, 0)
 
-fourthMethod(function(){
-  console.log("Fourth")
+fourthMethod(function () {
+  console.log('Fourth')
 })
 
-console.log("Third")
+console.log('Third')
 
-function fourthMethod(callback){
+function fourthMethod(callback) {
   callback()
-} */
-
-
-
+}
 
 /* Var vs Let */
 
-/*function method(){
- for(let i=0;i<5;i++){
-   console.log('inside for')
- }
- console.log("omg this should not happen: "+i)
+function method() {
+  for (let i = 0; i < 5; i++) {
+    console.log('inside for')
+  }
+  console.log('omg this should not happen: ' + i)
 }
 
-method()*/
-
-
-
+method()
 
 /* Class in es5 */
 
-/*function Animal(name, energy){
-    this.name = name
-    this.energy = energy
+function Animal(name, energy) {
+  this.name = name
+  this.energy = energy
 
-  Animal.prototype.eat = function(){
+  Animal.prototype.eat = function () {
     energy += 1
     console.log(`${name} is eating and his remaining energy is: ${energy}`)
   }
 
-  Animal.prototype.run = function(){
+  Animal.prototype.run = function () {
     energy -= 1
     console.log(`${name} is running and his remaining energy is: ${energy}`)
   }
 }
 
-let dog = new Animal("figo", 5)
+let dog = new Animal('figo', 5)
 dog.eat()
-dog.run()*/
-
-
-
+dog.run()
 
 /* No Repeat array*/
 
 /*let array = [1,2,3,4,5,1,3,5]
 console.log(array)*/
-
-
-
 
 /* Object Spread Operator*/
 
@@ -124,9 +109,6 @@ function consoleUser({name = "Jose",age, ...rest}){
 const monster = consoleUser(person)
 console.log(monster.name)*/
 
-
-
-
 /* this inside functions */
 
 /*function a(){
@@ -145,9 +127,6 @@ b()
 
 console.log(this.c)*/
 
-
-
-
 /* array methods */
 
 /*var items = [
@@ -165,9 +144,6 @@ const result = items.sort((a,b) => a.name > b.name)
 
 console.log(items)*/
 
-
-
-
 /* Calling arguments inside a function that no recibes arguments 
   using from array method */
 
@@ -178,27 +154,20 @@ console.log(items)*/
 
 sumArgs(1,2,3,4,5)*/
 
-
-
-
 /* typeof [] */
-
-
-
 
 /* function double */
 
-function double(array){
-  return array.map((item) => item * 2)
+function double(array) {
+  return array.map(item => item * 2)
 }
 
-console.log(double([1,2,3,4]))
+console.log(double([1, 2, 3, 4]))
 
+/* add function */
 
-/* add function */ 
-
-function add(array){
-  return array.reduce((result, item) => result + item ,0)
+function add(array) {
+  return array.reduce((result, item) => result + item, 0)
 }
 
-console.log(add([1,2,3]))
+console.log(add([1, 2, 3]))

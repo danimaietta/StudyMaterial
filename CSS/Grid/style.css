@@ -17,7 +17,7 @@ h1 {
   display: grid;
   height: 95vh;
   grid-template: 1fr 2fr 1fr / repeat(auto-fit, minmax(200px, 1fr));
-  grid-area: 1 / 3 / 1 / 2;
+  grid-area: 4 / 2 / 3 / 2;
   grid-gap: 50px 20px;
   background: grey;
   border: solid 4px cornflowerblue;
@@ -36,27 +36,21 @@ h1 {
 .item-1 {
   background-image: url('assets/saitama-1.gif');
 }
-
 .item-2 {
   background-image: url('assets/saitama-2.gif');
 }
-
 .item-3 {
   background-image: url('assets/saitama-3.gif');
 }
-
 .item-4 {
   background-image: url('assets/saitama-4.gif');
 }
-
 .item-5 {
   background-image: url('assets/saitama-5.gif');
 }
-
 .item-6 {
   background-image: url('assets/saitama-6.gif');
 }
-
 .item-7 {
   background-image: url('assets/saitama-7.gif');
 }

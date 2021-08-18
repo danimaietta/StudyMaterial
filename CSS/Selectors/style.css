@@ -1,16 +1,16 @@
 /*General*/
-html{
+html {
   color: white;
   font-family: Arial;
   font-weight: bold;
 }
-body{
+body {
   margin: 0;
 }
-h4{
+h4 {
   color: peru;
 }
-.selectorSubject{
+.selectorSubject {
   width: 98%;
   height: 1%;
   background: purple;
@@ -18,7 +18,7 @@ h4{
   padding: 1%;
   text-align: center;
 }
-.selector{
+.selector {
   width: 95%;
   height: 5%;
   background: black;
@@ -38,7 +38,8 @@ h4{
 */
 
 /*Grouping*/
-#grouping1, #grouping3 {
+#grouping1,
+#grouping3 {
   color: green;
   text-align: center;
 }
@@ -52,7 +53,7 @@ h4{
 */
 
 /*Descendant*/
-#descendant1 #descendant2{
+#descendant1 #descendant3 {
   color: green;
   text-align: center;
 }
@@ -64,13 +65,13 @@ h4{
 }
 
 /*Adjacent Sibling*/
-#sibling1 + #sibling2{
+#sibling1 + #sibling2 {
   color: green;
   text-align: center;
 }
 
 /*General Sibling*/
-#sibling4 ~ #sibling6{
+#sibling4 ~ #sibling6 {
   color: green;
   text-align: center;
 }
@@ -78,62 +79,63 @@ h4{
 /******************** Pseudo-class ****************/
 /* always use  :  */
 /*Anchor*/
-#anchor1:hover{
+#anchor1:hover {
   background: green;
 }
 
 /*Tooltip*/
-div:hover span{
+div:hover span {
   background: green;
 }
 
 /*Childs*/
-.child:nth-child(1){
+.child:nth-child(1) {
   background: green;
 }
 
 /*Lang*/
-q:lang(example){
-  quotes: "~" "kikirikiiii";
+q:lang(example) {
+  quotes: '~''kikirikiiii';
 }
 
 /******************** Pseudo-elements ****************/
 /* always use   ::   */
-#first-line::first-line{
+#first-line::first-line {
   color: green;
 }
-#first-letter::first-letter{
+#first-letter::first-letter {
   color: green;
 }
-#before::before{
-  content: "before in css - ";
+#before::before {
+  content: 'before in css - ';
 }
-#after::after{
-  content: " - after in css ";
+#after::after {
+  content: ' - after in css ';
 }
-::selection{
+::selection {
   background: red;
 }
 
 /******************** Attribute ****************/
-#simpleAttr[target]{
+#simpleAttr[target] {
   background: green;
 }
-#withValueAttr[target="b"]{
+#withValueAttr[target='b'] {
   background: green;
 }
-#wordInAttr[target~="bc"]{
+#wordInAttr[target~='bc'] {
   background: green;
 }
-#hyphenAttr[target|="a"]{ /* hyphen = guion- */
+#hyphenAttr[target|='a'] {
+  /* hyphen = guion- */
   background: green;
 }
-#startAttr[target^="a"]{
+#startAttr[target^='a'] {
   background: green;
 }
-#endAttr[target$="c"]{
-  background:green;
+#endAttr[target$='c'] {
+  background: green;
 }
-#containingAttr[target*="b"]{
+#containingAttr[target*='b'] {
   background: green;
 }
