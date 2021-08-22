@@ -8,22 +8,22 @@
     ... gets the content of the array
 */
 
-var arr = [1,2,"pepe",4,5]
+var arr = [1, 2, 'pepe', 4, 5]
 console.log(...arr) // 1 2 pepe 4 5
 
 // it is useful to gather arrays
 
-var arr1 = [1,2,3,4,5]
-var arr2 = [6,7,8,9,10]
+var arr1 = [1, 2, 3, 4, 5]
+var arr2 = [6, 7, 8, 9, 10]
 var arr3 = [...arr1, ...arr2]
 console.log(arr3) // [1 2 3 4 5 6 7 8 9 10]
 
 // mas util aun utilizarlo para tener un array los parametros de un metodo
 // is useful
 
-var parametros = ["Dani", 25, 1.68]
+var parametros = ['Dani', 25, 1.68]
 
-function presentation(name, age, height){
+function presentation(name, age, height) {
   console.log(`my name is ${name}, im ${age} years old and im ${height}m tall`)
 }
 
@@ -50,10 +50,11 @@ console.log(name, age, height) // Dani 25 1.68
     if we want to destructure the arguments, without array destructuring
 */
 
-var arr = ["Dani", 25]
+var arr = ['Dani', 25]
 
-function info(arr){ // aqui se destructura
-  var name = arr[0] 
+function info(arr) {
+  // aqui se destructura
+  var name = arr[0]
   var age = arr[1]
   console.log(`name: ${name}, age: ${age}`)
 }
@@ -64,10 +65,11 @@ info(arr) // name: Dani, age: 25
     with array destructuring 
 */
 
-var arr = ["Dani", 25]
+var arr = ['Dani', 25]
 
-function info([name, age]){ // here it destructures
-    console.log(`name: ${name}, age: ${age}`)
+function info([name, age]) {
+  // here it destructures
+  console.log(`name: ${name}, age: ${age}`)
 }
 
 info(arr) // name: Dani, age: 25
@@ -78,11 +80,12 @@ info(arr) // name: Dani, age: 25
 
 var arr = [undefined, 25]
 
-function info([ name="default", age=30 ]){ //  here it destructures
-    console.log(`name: ${name}, age: ${age}`)
+function info([name = 'Dani', age = 30]) {
+  //  here it destructures
+  console.log(`name: ${name}, age: ${age}`)
 }
 
-info(arr) // name: default, age: 25
+info(arr) // name: Dani, age: 25
 
 /* **********************************
         OBJECT DESTRUCTURING
@@ -93,8 +96,8 @@ info(arr) // name: default, age: 25
 */
 
 const obj1 = { a: 1, b: 2 }
-const obj2 = { a: 2, c: 3, d: 4}
-const obj3 = {...obj1, ...obj2}
+const obj2 = { a: 2, c: 3, d: 4 }
+const obj3 = { ...obj1, ...obj2 }
 
 console.log(obj3) // { a:2, b:2, c:3, d:4 }
 
@@ -103,12 +106,12 @@ console.log(obj3) // { a:2, b:2, c:3, d:4 }
 */
 
 var person = {
-    name: "Dani",
-    age: 25,
-    saludar: () => 'hi'
- }
-  
-var {name, age, saludar} = person
+  name: 'Dani',
+  age: 25,
+  saludar: () => 'hi'
+}
+
+var { name, age, saludar } = person
 console.log(name, age, saludar()) // Dani 25 hi
 
 /*
@@ -116,12 +119,12 @@ console.log(name, age, saludar()) // Dani 25 hi
 */
 
 var person = {
-    name: "Dani",
-    age: 25
+  name: 'Dani',
+  age: 25
 }
 
-function info({name, age}){
-    console.log(`name: ${name}, age: ${age}`)
+function info({ name, age }) {
+  console.log(`name: ${name}, age: ${age}`)
 }
 
 info(person) // name: Dani, age: 25
@@ -130,10 +133,10 @@ info(person) // name: Dani, age: 25
     we can define the arguments by default
 */
 
-function info({name = 'Dani', age = 25}){
-    console.log(`name: ${name}, age: ${age}`)
+function info({ name = 'Dani', age = 25 }) {
+  console.log(`name: ${name}, age: ${age}`)
 }
-  
+
 info({}) // name: Dani, age: 25
 
 /*
@@ -141,11 +144,11 @@ info({}) // name: Dani, age: 25
 */
 
 var person = {
-    name: "Dani"
+  name: 'Dani'
 }
-    
-function info({name = 'Dani', age = 25}){
-    console.log(`name: ${name}, age: ${age}`)
+
+function info({ name = 'Dani', age = 25 }) {
+  console.log(`name: ${name}, age: ${age}`)
 }
 
 info(person) // name: Dani, age: 25
@@ -155,13 +158,15 @@ info(person) // name: Dani, age: 25
 */
 
 var person = {
-    data: {
-      name: "Dani",
-      age: 25
-    }
+  data: {
+    name: 'Dani',
+    age: 25
+  }
 }
-  
-const { data: { name, age } } = person
+
+const {
+  data: { name, age }
+} = person
 console.log(name, age) // Dani 25
 
 // this is one visible better way to do it
