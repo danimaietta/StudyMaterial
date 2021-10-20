@@ -81,6 +81,7 @@ h4 {
 
 .absolute {
   position: absolute;
+  left: 50px;
   width: 30%;
   border: green dotted 1px;
   padding: 0.5%;
