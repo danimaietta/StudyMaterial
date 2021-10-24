@@ -1,0 +1,16 @@
+@import 'variables'
+    
+=message($color)
+    color: $text-message
+    font-size: 20px
+    padding: 20px
+    background-color: $color
+
+.warning
+    +message($warning)
+
+.error
+    +message($error)
+
+.success
+    +message($success)

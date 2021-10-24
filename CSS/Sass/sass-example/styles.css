@@ -1,0 +1,21 @@
+.warning {
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  background-color: darkGoldenRod;
+}
+
+.error {
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  background-color: crimson;
+}
+
+.success {
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  background-color: darkGreen;
+}
+/*# sourceMappingURL=styles.css.map */
