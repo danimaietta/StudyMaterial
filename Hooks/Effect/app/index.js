@@ -4,6 +4,7 @@ import './index.css'
 import Example from './components/Example'
 import Posts from './components/Posts'
 import FriendStatus from './components/FriendStatus'
+import Scroll from './components/Scroll'
 
 function App() {
   const [status, setStatus] = useState(true)
@@ -16,11 +17,7 @@ function App() {
       <Posts />
       <br />
       <h1>Friend Status</h1>
-      {status ? (
-        <FriendStatus friend={{ id: 1 }} />
-      ) : (
-        <FriendStatus friend={{ id: 2 }} />
-      )}
+      {status ? <FriendStatus friend={{ id: 1 }} /> : <FriendStatus friend={{ id: 2 }} />}
       <br />
       <button onClick={() => setStatus(!status)}>change friend</button>
     </>

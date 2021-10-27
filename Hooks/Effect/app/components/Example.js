@@ -5,6 +5,7 @@ export default function Counter() {
 
   useEffect(() => {
     console.count('In useEffect, after render')
+    console.log('window', window)
   }, [])
 
   return (
