@@ -1,0 +1,19 @@
+.bar[id='baz'] {
+  color: green;
+}
+
+.foo > .bar {
+  color: red;
+}
+
+.foo .bar {
+  color: blue;
+}
+
+div {
+  color: purple;
+}
+
+* {
+  color: chartreuse;
+}
