@@ -1,9 +1,6 @@
 import React from 'react'
 
-export default function withHoverClassComponent(
-  Component,
-  propName = 'hovering'
-) {
+export default function withHoverClassComponent(Component, propName = 'hovering') {
   return class WithHover extends React.Component {
     constructor(props) {
       super(props)
@@ -29,9 +26,7 @@ export default function withHoverClassComponent(
       return (
         <div onMouseOver={this.mouseOver} onMouseOut={this.mouseOut}>
           <Component {...this.props} {...props} />
-          {this.state.hovering && (
-            <h4>Message when you hover in {this.props.message}</h4>
-          )}
+          {this.state.hovering && <h4>Message when you hover in {this.props.message}</h4>}
         </div>
       )
     }
