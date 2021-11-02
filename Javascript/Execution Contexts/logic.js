@@ -53,7 +53,7 @@ function method() {
   for (let i = 0; i < 5; i++) {
     console.log('inside for')
   }
-  console.log('omg this should not happen: ' + i)
+  //console.log('This will throw a Referece error: ' + i)
 }
 
 method()
@@ -171,3 +171,10 @@ function add(array) {
 }
 
 console.log(add([1, 2, 3]))
+
+/* Anonymous function variables without declaration has global scope */
+;(function () {
+  anonymous = 'Anonymous function'
+})()
+
+console.log(anonymous)
