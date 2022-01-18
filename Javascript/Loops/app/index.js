@@ -27,7 +27,7 @@ for (let prop in obj) {
 }
 
 /*
-  for off
+  for of
       suggar code for classic for
 */
 for (let emoji of array) {

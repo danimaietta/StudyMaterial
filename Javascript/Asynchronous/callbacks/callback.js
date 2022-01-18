@@ -1,4 +1,4 @@
-const userLeft = false
+const userLeft = true
 const userWatchingCatMeme = false
 
 const watchTutorialCallback = (callback, errorCallback) => {
