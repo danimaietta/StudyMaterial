@@ -1,0 +1,26 @@
+.App {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+
+button {
+  font-size: 1.5rem;
+}
+
+.add-btn,
+.update-btn,
+.delete-btn {
+  display: none;
+}
+
+li:hover .add-btn {
+  display: inline-block;
+}
+
+li:hover .update-btn {
+  display: inline-block;
+}
+
+li:hover .delete-btn {
+  display: inline-block;
+}
