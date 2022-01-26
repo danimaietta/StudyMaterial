@@ -4,10 +4,10 @@
 }
 
 button {
+  display: block;
   font-size: 1.5rem;
 }
 
-.add-btn,
 .update-btn,
 .delete-btn {
   display: none;
