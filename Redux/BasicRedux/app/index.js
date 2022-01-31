@@ -6,6 +6,7 @@ import Login from './components/Login'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import rootReducer from './reducers' // this search index by default
+import { ToDoList } from './components/ToDoList'
 
 const store = createStore(
   rootReducer,
@@ -15,6 +16,7 @@ const store = createStore(
 function App() {
   return (
     <>
+      <ToDoList />
       <Counter />
       <Login />
     </>

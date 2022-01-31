@@ -3,14 +3,16 @@ import { createStore, combineReducers } from 'redux'
 const initalState1 = ['first item', 'second item']
 
 function toDoListReducer(state = initalState1, action) {
-  switch (action.type) {
+  const { type, value, index } = action
+  console.log(action)
+  switch (type) {
     case 'ADD_ITEM':
-      return [...state, action.value]
+      return new Array(...state, value)
     case 'UPDATE_ITEM':
-      state[action.index] = action.value
+      state[index] = value
       return [...state]
     case 'DELETE_ITEM':
-      return state.filter((v, i) => i !== action.index)
+      return state.filter((v, i) => i !== index)
     default:
       return [...state]
   }

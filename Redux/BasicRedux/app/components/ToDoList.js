@@ -1,18 +1,17 @@
-import React, { useState, useCallback, useRef } from 'react'
-import { useStore, useDispatch } from 'react-redux'
+import React, { useRef } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 
 export function ToDoList() {
-  const store = useStore()
+  const toDoList = useSelector(state => state.toDoList)
+  console.log(toDoList)
   const dispatch = useDispatch()
   const input = useRef('')
-  const [, updateState] = useState()
-  const forceUpdate = useCallback(() => updateState({}), [])
 
   return (
     <div>
       <input ref={input}></input>
       <ul>
-        {store.getState().toDoListReducer.map((item, index) => (
+        {toDoList.map((item, index) => (
           <li key={index}>
             {item}
             <button
@@ -35,7 +34,6 @@ export function ToDoList() {
       <button onClick={() => dispatch({ type: 'ADD_ITEM', value: input.current.value })}>
         +
       </button>
-      <button onClick={forceUpdate}>Refresh page</button>
     </div>
   )
 }
