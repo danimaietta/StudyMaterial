@@ -1,5 +1,4 @@
 'use strict'
-
 /*
     The next examples will give error with 'use strict'
     Without 'use strict' they should work
@@ -14,24 +13,24 @@ var x = 1
 delete x
 
 // duplicate a parameter
-function x(p1, p1, p1) {
-    console.log(p1)
+function a(p1, p1, p1) {
+  console.log(p1)
 }
-x(1, 2, 3)
+a(1, 2, 3)
 
 // octal numeric literals
 var x = 010
 
 // read-only property
-var obj = {};
-Object.defineProperty(obj, "x", {value:0, writable:false});
-obj.x = 3.14;
+var obj = {}
+Object.defineProperty(obj, 'x', { value: 0, writable: false })
+obj.x = 3.14
 
 // global this is undefined
-function printThis(){
-    console.log(this)
+function printThis() {
+  console.log(this)
 }
-printThis()
+printThis() // undefined
 
 // reserved words
 var implements = 1
@@ -45,4 +44,3 @@ var static = 8
 var yield = 9
 var eval = 10
 var arguments = 11
-
