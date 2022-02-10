@@ -5,6 +5,7 @@ export default function MainComponent() {
   const [number, setNumber] = useState(1)
   const [booleanValue, setBooleanValue] = useState(true)
 
+  // try erasing useMemo
   const result = useMemo(() => slowFunction(number), [number])
 
   console.count('main component renders')
