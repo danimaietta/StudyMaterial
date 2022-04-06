@@ -15,3 +15,42 @@ employee = [
 ]
 
 let workId: number | string = "3956865"
+
+enum Direction1 {
+  Up = 5,
+  Down,
+  Left,
+  Right
+}
+
+/*const user: { id: number; name: string } = {
+  id: 1,
+  name: "John"
+}*/
+
+type User = { id: number; name: string }
+
+const user: User = {
+  id: 1,
+  name: "John"
+}
+
+let cid: any = 1
+//let customerId = <number>cid
+let customerId = cid as number
+
+function addNum(x: number = 1, y: number = 3): number {
+  return x + y
+}
+console.log(addNum(1, 2))
+
+function display(message: string | number): string | number {
+  return "this is the message: " + message
+}
+display("hello world")
+display(420)
+
+function printMessage(message: string | number): void {
+  console.log(message)
+}
+printMessage("hello world")
