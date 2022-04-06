@@ -7,7 +7,7 @@ export default function InputButton() {
     <div>
       <h1>{value}</h1>
       <input ref={inputRef} />
-      <button onClick={e => setValue(inputRef.current.value)}>Press me</button>
+      <button onClick={() => setValue(inputRef.current.value)}>Press me</button>
     </div>
   )
 }
