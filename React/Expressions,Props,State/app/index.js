@@ -6,9 +6,7 @@ import FunctionComponent from './components/FunctionComponent'
 
 function App() {
   
-  const sayHi = (message) => {
-    alert(`Hello World ${message}`)
-  }
+  const sayHi = (message) => alert(`Hello World ${message}`)
 
   return (
     <>

@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react'
-import { MemoizedFuncChild1 } from './FuncChild1'
+import FuncChild1, {a, b} from './FuncChild1'
 import FuncChild2 from './FuncChild2'
 
 export default function FunctionFather(){
@@ -14,7 +14,7 @@ export default function FunctionFather(){
   return (
     <>
       <h1>My function value is {fatherValue.toString()}</h1>
-      <MemoizedFuncChild1 msg={value} />
+      <FuncChild1 msg={value} />
       <FuncChild2 msg={value} />
       <button onClick={() => toggleValue()}> Toggle global value </button>
       <button onClick={() => setFatherValue(!fatherValue)}> Toggle father value </button>
