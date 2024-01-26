@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function About() {
 
   async function load(){
@@ -7,6 +9,9 @@ export default function About() {
   load()
 
   return (
-    <h1>about</h1>
+    <>
+      <h1>about</h1>
+      <Link href="about/information/1">search for product 1</Link>
+    </>
   )
 }
