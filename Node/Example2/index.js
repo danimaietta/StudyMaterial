@@ -1,7 +1,7 @@
 const http = require("http")
-const servidor = http.createServer()
-const puerto = 3000
+const server = http.createServer()
+const port = 3000
 
-servidor.listen(3000, () => {
-  console.log("servidor en puerto 3000")
+server.listen(port, () => {
+  console.log("server on port 3000")
 })

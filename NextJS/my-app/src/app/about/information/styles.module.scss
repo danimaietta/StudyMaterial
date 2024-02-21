@@ -1,0 +1,15 @@
+.input-select {
+    position: relative;
+  
+    select,
+    &::after {
+      grid-area: select;
+    }
+  
+    // Optional styles
+    // remove for transparency
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+
+  }
+
