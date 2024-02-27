@@ -1,0 +1,18 @@
+{
+  "homepage": "https://danimaietta.github.io/StudyMaterial",
+  "name": "react-context",
+  "version": "1.0.0",
+  "description": "this is made for study purposes only",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/eslint --init",
+    "lint": "eslint . --fix",
+    "build": "SET NODE_ENV='production' && webpack"
+  },
+  "keywords": [],
+  "author": "danimaietta",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  }
+}
