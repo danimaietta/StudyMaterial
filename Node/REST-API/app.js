@@ -2,12 +2,15 @@ const express = require('express')
 const app = express()
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
 
 const productRoutes = require('./api/routes/products')
 const orderRoutes = require('./api/routes/orders')
 
+mongoose.connect('mongodb+srv://danimaietta1:tDklxbvLQd1xge17@node-rest-shop.0lo9ugu.mongodb.net/?retryWrites=true&w=majority&appName=node-rest-shop')
+
 app.use(morgan('dev'))
-app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 // CORS
