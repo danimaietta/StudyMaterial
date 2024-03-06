@@ -18,10 +18,15 @@ const io = new Server(server, {
 io.on('connection', (socket) => {
     console.log(`User Connected: ${socket.id}`)
 
+    socket.on('join_room', (data) => {
+        console.log('join_room data:', data)
+        socket.join(data)
+    })
+
     socket.on('send_message', (data) => {
-        console.log(data)
-        socket.broadcast.emit('receive_message', data)
+        console.log('send_message data:', data)
+        socket.to(data.room).emit('receive_message', data)
     })
 })
 
-server.listen(3001, () => console.log('server is running'))
+server.listen(3001, () => console.log('SERVER IS RUNNING'))
