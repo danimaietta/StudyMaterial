@@ -71,6 +71,31 @@ router.post('/', (req, res, next) => {
     next()
 })
 
+// If price is more than 1000 then don't update the price
+app.put('/products/:id', async (req, res) => {
+    const { id } = req.params;
+    const { name, price } = req.body;
+  
+    try {
+        const product = await Product.findById(id);
+  
+        if (!product) {
+            return res.status(404).json({ message: 'Product not found' });
+        }
+  
+        product.name = name;
+        if (price <= 1000) {
+        product.price = price;
+        }
+  
+        await product.save();
+  
+        res.json({ message: 'Product updated successfully', product });
+    } catch (err) {
+        res.status(500).json({ message: 'Something went wrong', err });
+    }
+})
+
 router.patch('/:productId', (req, res, next) => {
     const id = req.params.productId;
     const updateOps = {};
