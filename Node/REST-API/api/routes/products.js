@@ -87,7 +87,7 @@ app.put('/products/:id', async (req, res) => {
   
         product.name = name;
         if (price <= 1000) {
-        product.price = price;
+            product.price = price;
         }
   
         await product.save();

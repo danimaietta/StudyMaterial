@@ -1,5 +1,71 @@
 body {
-    background-image: url("path/to/your/image.jpg");
+    background-image: url("berserk-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover; /* Safari */
+    -moz-background-size: cover; /* Firefox */
+    -o-background-size: cover; /* Opera */
+    color: white;
+}
+
+#login-div h1 {
+    display: block;
+    text-align: center;
+}
+
+#house-icon {
+    background-color: transparent;
+    font-size: 48px;
+    border: none;
+}
+
+#house-icon:hover {
+    /* hover styles */
+    font-size: 52px;
+    cursor: pointer;
+}
+
+#sidemenu {
+    display: flex;
+    flex-direction: column;
+}
+
+#sidemenu li {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-family: "Arial", sans-serif;
+    width: 200px;
+    padding: 10px;
+}
+
+#sidemenu a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#sidemenu button:hover {
+    background-color: #dddddd;
+}
+
+#login-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-div input[type="text"],
+#login-div input[type="password"],
+button {
+    background-color: #ffffff;
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 20px;
+    padding: 5px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
