@@ -26,8 +26,6 @@ router.get('/', (req, res, next) => {
     })
 })
 
-
-
 router.get('/:productId', (req, res, next) => {
     const id = req.params.productId;
     Product.findById(id)
