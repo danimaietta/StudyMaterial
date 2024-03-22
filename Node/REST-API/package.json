@@ -4,7 +4,7 @@
   "description": "rest-api test project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --watch",
     "dev": "node server.js",
     "start": "nodemon server.js"
   },
@@ -16,6 +16,7 @@
   "author": "Daniel Maietta Esquivel",
   "license": "ISC",
   "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
     "body-parser": "^1.20.2",
     "express": "^4.18.2",
     "mongoose": "^8.2.0",

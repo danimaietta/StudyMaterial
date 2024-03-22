@@ -72,7 +72,7 @@ router.post('/', (req, res, next) => {
 })
 
 // If price is more than 1000 then don't update the price
-app.put('/products/:id', async (req, res) => {
+router.put('/products/:id', async (req, res) => {
     const { id } = req.params;
     const { name, price } = req.body;
   
