@@ -5,10 +5,10 @@ const bodyParser = require('body-parser')
 
 const dataRoutes = require('./routes/datas')
 
-app.use('/data', dataRoutes)
-
 app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+
+app.use('/api', dataRoutes)
 
 module.exports = app;

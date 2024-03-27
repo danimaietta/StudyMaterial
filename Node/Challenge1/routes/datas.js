@@ -7,26 +7,16 @@ router.get('/', (req, res, next) => {
     })
 })
 
-router.post('/data', (req, res, next) => {
+router.post('/data', (req, res) => {
     const numbers = req.body
 
-    if (numbers.length === 500) {
-        res.status(201).json({
-            message: 'Order was created',
-            createdOrder: order
-        })
-    } else {
-        res.status(400).json({
-            message: 'Invalid request. Numbers length should be 500.'
-        });
-    }
-})
+    console.log(numbers)
 
-router.get('/:orderId', (req, res, next) => {
-    res.status(200).json({
-        message: 'Order details',
-        orderId: req.params.orderId
-    })
+    if (numbers.length !== 500) {
+        throw new Error('Invalid numbers length, must be 500')
+    } 
+
+    res.json('Hello World')
 })
 
 module.exports = router;
