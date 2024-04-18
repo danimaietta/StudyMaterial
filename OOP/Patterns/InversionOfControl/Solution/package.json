@@ -1,0 +1,16 @@
+{
+    "name": "inversion-of-control",
+    "version": "1.0.0",
+    "description": "rest-api test project",
+    "main": "index.js",
+    "scripts": {
+      "test": "jest --watch",
+      "start": "node Main.js"
+    },
+    "keywords": [],
+    "author": "Daniel Maietta Esquivel",
+    "license": "ISC",
+    "type": "module",
+    "dependencies": {
+    }
+  }
