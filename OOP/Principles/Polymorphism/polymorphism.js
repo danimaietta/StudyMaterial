@@ -1,38 +1,32 @@
-// Shape class
-class Shape {
-    area() {
-        throw new Error('Method not implemented');
+class Animal {
+    constructor(name) {
+      this.name = name;
+    }
+  
+    // Polymorphic method
+    makeSound() {
+      return "Animal makes a sound";
+    }
+}
+  
+class Dog extends Animal {
+
+    makeSound() {
+        return "Woof!";
     }
 }
 
-// Circle class extending Shape
-class Circle extends Shape {
-    constructor(radius) {
-        super();
-        this.radius = radius;
-    }
+class Cat extends Animal {
 
-    area() {
-        return Math.PI * this.radius ** 2;
+    makeSound() {
+        return "Meow!";
     }
 }
 
-// Rectangle class extending Shape
-class Rectangle extends Shape {
-    constructor(width, height) {
-        super();
-        this.width = width;
-        this.height = height;
-    }
+const animal = new Animal("Generic Animal");
+const dog = new Dog("Buddy");
+const cat = new Cat("Whiskers");
 
-    area() {
-        return this.width * this.height;
-    }
-}
-
-// Usage
-const circle = new Circle(5); // Create a Circle instance
-const rectangle = new Rectangle(4, 6); // Create a Rectangle instance
-
-console.log(circle.area()); // Output: 78.54 (approx)
-console.log(rectangle.area()); // Output: 24
+console.log(animal.makeSound()); // Animal makes a sound
+console.log(dog.makeSound());    // Woof!
+console.log(cat.makeSound());    // Output: Meow!
