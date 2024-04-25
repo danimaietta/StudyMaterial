@@ -8,10 +8,10 @@ app.get('/non-blocking/', (req, res) => {
 
 app.get('/blocking', (req, res) => {
     let sum = 0;
-    for (let i = 0; i < 1000000000; i++) {
+    for (let i = 0; i < 1000000000000; i++) {
         sum += i;
     }
-    res.status(200).send('Blocking request');
+    res.status(200).send('Blocking request, the sum is ' + sum);
 });
 
 app.listen(port, () => {
