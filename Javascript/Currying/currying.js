@@ -37,15 +37,15 @@ const [cardInfo, setCardInfo] = useState({
 })
 
 // Without handleChange
-;<input onChange={e => setCardInfo({ ...cardInfo, owner: e.target.value })}></input>
-;<input onChange={e => setCardInfo({ ...cardInfo, cardNumber: e.target.value })}></input>
-;<input onChange={e => setCardInfo({ ...cardInfo, cvv: e.target.value })}></input>
-;<input onChange={e => setCardInfo({ ...cardInfo, type: e.target.value })}></input>
+//;<input onChange={e => setCardInfo({ ...cardInfo, owner: e.target.value })}></input>
+//;<input onChange={e => setCardInfo({ ...cardInfo, cardNumber: e.target.value })}></input>
+//;<input onChange={e => setCardInfo({ ...cardInfo, cvv: e.target.value })}></input>
+//;<input onChange={e => setCardInfo({ ...cardInfo, type: e.target.value })}></input>
 
 // With handleChange
 const handleChange = attr => e => setCardInfo({ ...cardInfo, [attr]: e.target.value })
 
-;<input onChange={handleChange('owner')}></input>
-;<input onChange={handleChange('cardNumber')}></input>
-;<input onChange={handleChange('cvv')}></input>
-;<input onChange={handleChange('type')}></input>
+//;<input onChange={handleChange('owner')}></input>
+//;<input onChange={handleChange('cardNumber')}></input>
+//;<input onChange={handleChange('cvv')}></input>
+//;<input onChange={handleChange('type')}></input>
