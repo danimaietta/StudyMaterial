@@ -1,26 +1,32 @@
 /* O(1) */
-//console.log('hi')
+console.log('hi')
+
+/* O(log n) */
+for (let i = 0; i <= 6; i++) {
+  if (i === 3) {
+    return i
+  }
+}
 
 /* O(n) */
 for (let i = 0; i <= 5; i++) {
-  //console.log('hi' + i)
+  return i
 }
 
-/* O(log n) */
-for (let i = 0; i <= 5; i++) {
-  if (i === 3) {
-    //console.log('hi')
+/* O(n log n) */
+let n = 6
+for(let i = 0; i <= 6; i++){
+  for(let j = 0; j <= n; j++){
+    n = n / 2
   }
 }
 
 /* O(n𝆜2) */
 for (let i = 0; i <= 5; i++) {
   for (let j = 0; j <= 5; j++) {
-    //console.log('hi' + i + j)
+    console.log('hi' + i + j)
   }
 }
-
-/* O(n log n) */
 
 /* O(2𝆜n) */
 function fibonacci(num) {
